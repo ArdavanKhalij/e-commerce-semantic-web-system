@@ -21,113 +21,15 @@
     
 
 
-    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_A_Delivery_Price -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_A_Delivery_Price">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_A_Price"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Delivery_Type"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Delivery_Price"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_A_Price -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_A_Price">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Delivery_Type"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Delivery_Price"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Address -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Address">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Amount -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Amount">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Order"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Order_Value"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Birth_Date -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Birth_Date">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Person"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Birth_Date"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Cantact_Information -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Cantact_Information">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_City -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_City">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Address"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#City"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Country -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Country">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Address"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Country"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Date -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Date">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Order"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Order_Date"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Address"/>
     </owl:ObjectProperty>
     
 
@@ -141,47 +43,6 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Order"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Delivery_status"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Description -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Description">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Delivery_status"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Delivery_Description"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Email -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Email">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Cantact_Information"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Email"/>
-        <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Phone_Number"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Full_Address -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Full_Address">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Order"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Complete_Address"/>
     </owl:ObjectProperty>
     
 
@@ -212,72 +73,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Phone_Number -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Phone_Number">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Cantact_Information"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Phone_Number"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Street_Address -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Street_Address">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Address"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Street_Address"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_The_Card_Number -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_The_Card_Number">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Payment_Card"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Card_Number"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_The_Card_Type -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_The_Card_Type">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Payment_Card"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Payment_Card_Type"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_The_Delivery_Duratoin_Of -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_The_Delivery_Duratoin_Of">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Delivery_Type"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Delivery_Duration"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_The_Delivery_Type -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_The_Delivery_Type">
@@ -288,98 +83,6 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Order"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Delivery_Type"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_The_Expiry_Date_Of -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_The_Expiry_Date_Of">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Payment_Card"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Card_Expiry_Date"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_The_First_Name -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_The_First_Name">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_The_Name"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Person"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#First_Name"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_The_Full_Name -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_The_Full_Name">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_The_Name"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Payment_Card"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Card_Holder_Name"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_The_Good_ID -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_The_Good_ID">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_The_ID"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Is_The_ID_Of_Good"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Good_ID"/>
-        <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_The_Reciept_ID"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_The_ID -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_The_ID">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Is_The_ID_Of"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_The_Last_Name -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_The_Last_Name">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_The_Name"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Person"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Last_Name"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_The_Name -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_The_Name">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
     </owl:ObjectProperty>
     
 
@@ -396,91 +99,220 @@
     
 
 
-    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_The_Product_Name -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_The_Product_Name">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_The_Name"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_Name"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_The_Reciept_ID -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_The_Reciept_ID">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_The_ID"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Is_The_ID_Of_Reciept"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Order"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Receipt_ID"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_This_Many_In_Reciept -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_This_Many_In_Reciept">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Number_Of_Each_Product_In_Reciept"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Is_The_ID_Of -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Is_The_ID_Of">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Is_The_ID_Of_Good -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Is_The_ID_Of_Good">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Is_The_ID_Of"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Good_ID"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product"/>
-        <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Is_The_ID_Of_Reciept"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Is_The_ID_Of_Reciept -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Is_The_ID_Of_Reciept">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Is_The_ID_Of"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Receipt_ID"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Order"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
 
     <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#address -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#address">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Address"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#birth_date -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#birth_date">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#cardExpiryDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#cardExpiryDate">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Payment_Card"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#cardHolderName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#cardHolderName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Payment_Card"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#cardNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#cardNumber">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Payment_Card"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#city -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#city">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Address"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#country -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#country">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Address"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#date -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#date">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Order"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#delivery_duration -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#delivery_duration">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Delivery_Type"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#description -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#description">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Delivery_status"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#email -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#email">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#first_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#first_name">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#full_address -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#full_address">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Order"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#good_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#good_id">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#last_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#last_name">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#numberof -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#numberof">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Order"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderAmount -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderAmount">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Order"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#phone_number -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#phone_number">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#price -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#price">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Delivery_Type"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#receipt_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#receipt_id">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Order"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
     
 
 
@@ -503,75 +335,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Birth_Date -->
+    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Credit -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Birth_Date">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Date"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Card_Expiry_Date -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Card_Expiry_Date">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Date"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Card_Holder_Name -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Card_Holder_Name">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Name"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Card_Number -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Card_Number">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#City -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#City">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Address"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Complete_Address -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Complete_Address">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Address"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Contact_Information -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Contact_Information">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Country -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Country">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Address"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Credit_Card -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Credit_Card">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Payment_Card_Type"/>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Debit_Card"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Credit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Payment_Card"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Debit"/>
     </owl:Class>
     
 
@@ -584,18 +352,10 @@
     
 
 
-    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Date -->
+    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Debit -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Date">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Debit_Card -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Debit_Card">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Payment_Card_Type"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Debit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Payment_Card"/>
     </owl:Class>
     
 
@@ -605,30 +365,6 @@
     <owl:Class rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Delivered">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Delivery_status"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Not_Delivered"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Delivery_Description -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Delivery_Description">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Description"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Delivery_Duration -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Delivery_Duration">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Time"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Delivery_Price -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Delivery_Price">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Value"/>
     </owl:Class>
     
 
@@ -650,72 +386,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Description -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Description">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Email -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Email">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Contact_Information"/>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Phone_Number"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#First_Name -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#First_Name">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Name"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Good_ID -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Good_ID">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#ID"/>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Receipt_ID"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Good_Value -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Good_Value">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Value"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#ID -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#ID">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Last_Name -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Last_Name">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Name"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Name -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Name">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Normal -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Normal">
@@ -733,14 +403,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Number_Of_Each_Product_In_Reciept -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Number_Of_Each_Product_In_Reciept">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Order -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Order">
@@ -749,33 +411,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Order_Date -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Order_Date">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Date"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Order_Value -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Order_Value">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Value"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Payment_Card -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Payment_Card">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Payment_Card_Type -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Payment_Card_Type">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     </owl:Class>
     
@@ -797,14 +435,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Phone_Number -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Phone_Number">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Contact_Information"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product">
@@ -813,49 +443,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_Name -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_Name">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Name"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Receipt_ID -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Receipt_ID">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#ID"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Service -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Service">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Street_Address -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Street_Address">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Address"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Time -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Time">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Value -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Value">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     </owl:Class>
     
@@ -872,70 +462,48 @@
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Birth_Date"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Card_Expiry_Date"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Order_Date"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Card_Holder_Name"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#First_Name"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Last_Name"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_Name"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#City"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Complete_Address"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Country"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Street_Address"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Delivery_Price"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Good_Value"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Order_Value"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Address"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Order"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Payment_Card"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Person"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Service"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_A_Price"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Address"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Amount"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Birth_Date"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Cantact_Information"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Date"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Delivery_Status"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Description"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Full_Address"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Order"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Payment_Card"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_The_Card_Number"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_The_Card_Type"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_The_Delivery_Duratoin_Of"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_The_Delivery_Type"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_The_Expiry_Date_Of"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_The_ID"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_The_Name"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_The_Product"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_This_Many_In_Reciept"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Is_The_ID_Of"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_The_First_Name"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_The_Full_Name"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_The_Last_Name"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_The_Product_Name"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#address"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#birth_date"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#cardExpiryDate"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#cardHolderName"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#cardNumber"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#city"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#country"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#date"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#delivery_duration"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#description"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#email"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#first_name"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#full_address"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#good_id"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#last_name"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#numberof"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderAmount"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#phone_number"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#price"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#receipt_id"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>
