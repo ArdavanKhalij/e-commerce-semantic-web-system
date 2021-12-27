@@ -1,0 +1,59 @@
+-- CREATE TABLE public."Product" (
+--     sku character varying(30) NOT NULL,
+--     name character varying(200) NOT NULL,
+--     color character varying(20),
+--     model character varying(50),
+--     "itemCondition" character varying(20) NOT NULL,
+--     description character varying(512),
+--     "stockQuantity" integer NOT NULL,
+--     location character varying(50) NOT NULL,
+--     "dateAdded" timestamp without time zone NOT NULL,
+--     brand character varying(30),
+--     category character varying(30),
+--     "adminSeller" character varying(30),
+--     "supplierSeller" character varying(30),
+--     price numeric(10,2) NOT NULL
+-- );
+
+-- CREATE TABLE public."Order" (
+--     "orderID" character varying(15)  NOT NULL,
+--     "orderStatus" character varying(10) NOT NULL,
+--     "orderDate" timestamp without time zone NOT NULL,
+--     "customerEmail" character varying(30) NOT NULL,
+-- 	"customerAddress" character varying(512) NOT NULL,
+--     "deliveryService" uuid NOT NULL,
+--     "orderAmount" numeric(10,2) NOT NULL
+-- );
+
+-- CREATE TABLE public."OrderDescription" (
+--     "order" character varying(15)  NOT NULL,
+--     product character varying(30) NOT NULL,
+--     quantity integer NOT NULL
+-- );
+-- CREATE TABLE public."ProductImages " (
+--     product character varying(30) NOT NULL,
+--     "imageUrl" character varying NOT NULL
+-- );
+
+-- CREATE TABLE public."Reviews" (
+--     author character varying(30) NOT NULL,
+--     about character varying(30) NOT NULL,
+--     "reviewBody" text NOT NULL,
+--     "reviewRatingValue" bigint NOT NULL,
+--     "dateCreated" timestamp without time zone NOT NULL,
+--     "dateModified" timestamp without time zone NOT NULL
+-- );
+-- CREATE TABLE public."Cart" (
+--     customer character varying(30) NOT NULL,
+--     product character varying(30) NOT NULL,
+--     "dateAdded" timestamp without time zone
+-- );
+
+-- CREATE TABLE public."Category" (
+--     name character varying(30) NOT NULL,
+--     description text
+-- );
+
+-- CREATE TABLE public."Brand" (
+--     name character varying(30) NOT NULL
+-- );

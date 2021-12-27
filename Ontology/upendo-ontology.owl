@@ -1,0 +1,538 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#"
+     xml:base="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:wot="http://xmlns.com/wot/0.1/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology">
+        <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This is an ontology for a large scale ecommerce platform</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Admin_advertises -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Admin_advertises">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#advertises"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Supplier_advertises -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Supplier_advertises">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#advertises"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#advertises -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#advertises"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#belongsTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#belongsTo">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Product"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Category"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#has -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#has"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#has_brand -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#has_brand">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#has"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Product"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Brand"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#has_image -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#has_image">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#has"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Product"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#ProductImages"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#isPlacedOn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#isPlacedOn">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Order"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Product"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#places -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#places">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Customer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Order"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#reviews -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#reviews">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Customer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Product"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Admin_seller -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Admin_seller">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#seller"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Brand_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Brand_name">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#name"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Brand"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Cart_customer -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Cart_customer">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#customer"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Customer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Cart_date_added -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Cart_date_added">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#dateAdded"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Cart"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Cart_product -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Cart_product">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#product"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Category_description -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Category_description">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#description"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Category"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Category_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Category_name">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#name"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Category"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Order_customer_address -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Order_customer_address">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#address"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Order_customer_email -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Order_customer_email">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#customerEmail"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Customer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Order_date -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Order_date">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#dateAdded"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Order"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Order_order_description -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Order_order_description">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#OrderDescription"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Product_date_added -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Product_date_added">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#dateAdded"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Product_description -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Product_description">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#description"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Product_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Product_name">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#name"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Supplier_seller -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Supplier_seller">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#seller"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#address -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#address"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#brand -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#brand">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#category -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#category">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#color -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#color">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#customer -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#customer">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#customerEmail -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#customerEmail"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#dateAdded -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#dateAdded"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#deliveryService -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#deliveryService"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#description -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#description"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#itemCondition -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#itemCondition">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#location -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#location">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#model -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#model">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#name"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#orderAmount -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#orderAmount">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Order"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#orderDescription_product -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#orderDescription_product">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#product"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#orderID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#orderID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Order"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#orderStatus -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#orderStatus">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Order"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#price -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#price">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#product -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#product"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#quantity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#quantity">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#OrderDescription"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#seller -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#seller"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#sku -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#sku">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#stockQuantity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#stockQuantity">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#url -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#url">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#ProductImages"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Brand -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Brand"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Cart -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Cart"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Category -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Category"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Customer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Customer"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Order -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Order"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#OrderDescription -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#OrderDescription"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Product -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Product"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#ProductImages -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#ProductImages"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Reviews -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jallo/ontologies/2021/10/upendo-ontology#Reviews"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

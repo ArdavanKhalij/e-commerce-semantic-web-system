@@ -1,0 +1,190 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix ecommerce: <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#>.
+
+# TransportCompany Mapping
+<#transportcompany>
+  a rr:TriplesMap ;
+  rr:logicalTable [
+    rr:tableName "transportcompany"
+  ];
+  rr:subjectMap [
+    rr:template "http://data.ecommerce/transportvehicle/{name}";
+    rr:class ecommerce:TransportCompany;
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:TransportCompanyname ;
+    rr:objectMap [rr:column "name"];
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:price_per_km ;
+    rr:objectMap [rr:column "price_per_km"];
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:api_key ;
+    rr:objectMap [rr:column "api_key"];
+  ].
+
+# deliverytrip Mapping
+<#transportvehicle>
+  a rr:TriplesMap ;
+  rr:logicalTable [
+    rr:tableName "transportvehicle"
+  ];
+  rr:subjectMap [
+    rr:template "http://data.ecommerce/transportvehicle/{id}";
+    rr:class ecommerce:TransportVehicle;
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:TransportVehicleID ;
+    rr:objectMap [rr:column "id"];
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:position ;
+    rr:objectMap [rr:column "position"];
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:TransportCompany;
+    rr:objectMap [
+      rr:parentTriplesMap <#transportcompany> ;
+      rr:joinCondition [
+        rr:child "company" ;
+        rr:parent "name"
+      ]
+    ]
+  ].
+
+# deliverytrip Mapping
+<#deliverytrip>
+  a rr:TriplesMap ;
+  rr:logicalTable [
+    rr:tableName "deliverytrip"
+  ];
+  rr:subjectMap [
+    rr:template "http://data.ecommerce/deliverytrip/{id}";
+    rr:class ecommerce:DeliveryTrip;
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:DeliveryTrip_ID ;
+    rr:objectMap [rr:column "id"];
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:departure_time ;
+    rr:objectMap [rr:column "departure_time"];
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:arrival_time ;
+    rr:objectMap [rr:column "arrival_time"];
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:TransportVehicle ;
+    rr:objectMap [
+      rr:parentTriplesMap <#transportvehicle> ;
+      rr:joinCondition [
+        rr:child "truck";
+        rr:parent "id"
+      ]
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:Warehouse ;
+    rr:objectMap [
+      rr:parentTriplesMap <#warehouse>;
+      rr:joinCondition [
+        rr:child "starting_warehouse";
+        rr:parent "warehousecode"
+      ]
+    ]
+  ].
+
+#Warehouse mapping
+<#warehouse>
+  a rr:TriplesMap;
+  rr:logicalTable [
+    rr:tableName "warehouse"
+  ];
+  rr:subjectMap [
+    rr:template "http://data.ecommerce/warehouse/{warehousecode}";
+    rr:class ecommerce:Warehouse;
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:warehousecode;
+    rr:objectMap [rr:column "warehousecode"]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:companyname;
+    rr:objectMap [rr:column "companyname"]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:email;
+    rr:objectMap [rr:column "email"]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:telephone;
+    rr:objectMap [rr:column "telephone"]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:addresscountry;
+    rr:objectMap [rr:column "addresscountry"]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:addresscity;
+    rr:objectMap [rr:column "addresscity"]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:addresslocality;
+    rr:objectMap [rr:column "addresslocality"]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:postalcode;
+    rr:objectMap [rr:column "postalcode"]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:streetaddress;
+    rr:objectMap [rr:column "streetaddress"]
+  ].
+
+
+# order Mapping
+<#order>
+  a rr:TriplesMap ;
+  rr:logicalTable [
+    rr:tableName "order"
+  ];
+  rr:subjectMap [
+    rr:template "http://data.ecommerce/order/{id}";
+    rr:class ecommerce:Order;
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:receipt_id;
+    rr:objectMap [rr:column "id"];
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:email ;
+    rr:objectMap [rr:column "email"];
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:date ;
+    rr:objectMap [rr:column "date"];
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:address ;
+    rr:objectMap [rr:column "address"];
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:DeliveryStatus ;
+    rr:objectMap [rr:column "status"];
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:Delivery_Type ;
+    rr:objectMap [rr:column "delivery_type"];
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:DeliveryTrip_ID ;
+    rr:objectMap [
+      rr:parentTriplesMap <#deliverytrip>;
+      rr:joinCondition [
+        rr:child "trip";
+        rr:parent "id"
+      ]
+    ]
+  ].

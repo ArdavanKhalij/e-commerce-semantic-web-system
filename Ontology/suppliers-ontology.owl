@@ -1,0 +1,224 @@
+@prefix : <http://www.semanticweb.org/acer/ontologies/2021/11/supplier#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/acer/ontologies/2021/11/supplier> .
+
+<http://www.semanticweb.org/acer/ontologies/2021/11/supplier> rdf:type owl:Ontology ;
+                                                               rdfs:comment "This is an ontology of a supplier that advertise in a e-commerce plataform"@en .
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#string
+xsd:string rdfs:comment "Main Adress to contact a supplier"@en .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/acer/ontologies/2021/11/supplier#is_storage
+:is_storage rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
+            rdf:type owl:FunctionalProperty ,
+                     owl:AsymmetricProperty ;
+            rdfs:domain :product ;
+            rdfs:range :warehouse .
+
+
+###  http://www.semanticweb.org/acer/ontologies/2021/11/supplier#register
+:register rdf:type owl:ObjectProperty ,
+                   owl:FunctionalProperty ,
+                   owl:AsymmetricProperty ,
+                   owl:ReflexiveProperty ;
+          rdfs:domain :suppliesOrder ;
+          rdfs:range :product ,
+                     :supplier ,
+                     :warehouse .
+
+
+###  http://www.semanticweb.org/acer/ontologies/2021/11/supplier#supplies
+:supplies rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf owl:topObjectProperty ;
+          rdf:type owl:FunctionalProperty ,
+                   owl:AsymmetricProperty ;
+          rdfs:domain :supplier ;
+          rdfs:range :product .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/acer/ontologies/2021/11/supplier#addressCity
+:addressCity rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf :adress ;
+             rdfs:domain :supplier ;
+             rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/acer/ontologies/2021/11/supplier#addressCountry
+:addressCountry rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf :adress ;
+                rdfs:domain :supplier ;
+                rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/acer/ontologies/2021/11/supplier#addressLocality
+:addressLocality rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf :adress ;
+                 rdfs:domain :supplier ;
+                 rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/acer/ontologies/2021/11/supplier#adress
+:adress rdf:type owl:DatatypeProperty ;
+        rdfs:domain :supplier ;
+        rdfs:range xsd:string ;
+        owl:propertyDisjointWith :bce ,
+                                 :companyName ,
+                                 :email ,
+                                 :telephone ,
+                                 :url .
+
+
+###  http://www.semanticweb.org/acer/ontologies/2021/11/supplier#arrivalDate
+:arrivalDate rdf:type owl:DatatypeProperty ;
+             rdfs:domain :suppliesOrder ;
+             rdfs:range xsd:dateTimeStamp .
+
+
+###  http://www.semanticweb.org/acer/ontologies/2021/11/supplier#bce
+:bce rdf:type owl:DatatypeProperty ;
+     owl:equivalentProperty :supplierBce ;
+     rdfs:domain :supplier ;
+     rdfs:range xsd:string ;
+     owl:propertyDisjointWith :companyName ,
+                              :email ,
+                              :telephone ,
+                              :url .
+
+
+###  http://www.semanticweb.org/acer/ontologies/2021/11/supplier#companyName
+:companyName rdf:type owl:DatatypeProperty ;
+             rdfs:domain :supplier ;
+             rdfs:range xsd:string ;
+             owl:propertyDisjointWith :email ,
+                                      :telephone ,
+                                      :url .
+
+
+###  http://www.semanticweb.org/acer/ontologies/2021/11/supplier#email
+:email rdf:type owl:DatatypeProperty ;
+       rdfs:domain :supplier ;
+       rdfs:range xsd:string ;
+       owl:propertyDisjointWith :url .
+
+
+###  http://www.semanticweb.org/acer/ontologies/2021/11/supplier#postalCode
+:postalCode rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf :adress ;
+            rdfs:domain :supplier ;
+            rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/acer/ontologies/2021/11/supplier#price
+:price rdf:type owl:DatatypeProperty ;
+       rdfs:domain :suppliesOrder ;
+       rdfs:range xsd:decimal .
+
+
+###  http://www.semanticweb.org/acer/ontologies/2021/11/supplier#quantity
+:quantity rdf:type owl:DatatypeProperty ;
+          rdfs:domain :suppliesOrder ;
+          rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/acer/ontologies/2021/11/supplier#sku
+:sku rdf:type owl:DatatypeProperty ;
+     rdfs:domain :product ;
+     rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/acer/ontologies/2021/11/supplier#streetAddress
+:streetAddress rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf :adress ;
+               rdfs:domain :supplier ;
+               rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/acer/ontologies/2021/11/supplier#supplierBce
+:supplierBce rdf:type owl:DatatypeProperty ;
+             rdfs:domain :suppliesOrder ;
+             rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/acer/ontologies/2021/11/supplier#suppliesID
+:suppliesID rdf:type owl:DatatypeProperty ;
+            rdfs:domain :suppliesOrder ;
+            rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/acer/ontologies/2021/11/supplier#supplyState
+:supplyState rdf:type owl:DatatypeProperty ;
+             rdfs:domain :suppliesOrder ;
+             rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/acer/ontologies/2021/11/supplier#telephone
+:telephone rdf:type owl:DatatypeProperty ;
+           rdfs:domain :supplier ;
+           rdfs:range xsd:string ;
+           owl:propertyDisjointWith :url .
+
+
+###  http://www.semanticweb.org/acer/ontologies/2021/11/supplier#url
+:url rdf:type owl:DatatypeProperty ;
+     rdfs:domain :supplier ;
+     rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/acer/ontologies/2021/11/supplier#warehouse
+:warehouse rdf:type owl:DatatypeProperty ;
+           owl:equivalentProperty :warehouseCode ;
+           rdfs:domain :suppliesOrder ;
+           rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/acer/ontologies/2021/11/supplier#warehouseCode
+:warehouseCode rdf:type owl:DatatypeProperty ;
+               rdfs:domain :warehouse ;
+               rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/acer/ontologies/2021/11/supplier#product
+:product rdf:type owl:Class ;
+         owl:disjointWith :supplier ,
+                          :suppliesOrder ,
+                          :warehouse .
+
+
+###  http://www.semanticweb.org/acer/ontologies/2021/11/supplier#supplier
+:supplier rdf:type owl:Class ;
+          owl:disjointWith :suppliesOrder ,
+                           :warehouse .
+
+
+###  http://www.semanticweb.org/acer/ontologies/2021/11/supplier#suppliesOrder
+:suppliesOrder rdf:type owl:Class ;
+               owl:disjointWith :warehouse .
+
+
+###  http://www.semanticweb.org/acer/ontologies/2021/11/supplier#warehouse
+:warehouse rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

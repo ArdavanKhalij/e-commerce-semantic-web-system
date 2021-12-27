@@ -1,0 +1,15 @@
+A query to retreive the products and relevant information and ordering them according to their price in ascending order. This is a useful query for customers when shopping to help filter through cheap products and also for admins when recommending cheap products to customers.
+
+
+PREFIX ecom: <http://data.ecommerce#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?product ?price ?quantity ?color ?model ?product_location ?date_added ?description WHERE {
+?product a ecom:Product .
+?product ecom:Product_price ?price. 
+?product ecom:Product_date_added ?date_added.
+  OPTIONAL {?product ecom:model ?model}.
+  OPTIONAL {?product ecom:location ?product_location}.
+  OPTIONAL {?product ecom:color ?color}.
+  OPTIONAL {?product ecom:stockQuantity ?quantity}.
+?product ecom:Product_description ?description
+} ORDER BY ?price

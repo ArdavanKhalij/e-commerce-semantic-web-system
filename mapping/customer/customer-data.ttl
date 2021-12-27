@@ -1,0 +1,435 @@
+<http://data.ecommerce/customers_addresses/harry.potter%40hogwarts.uk_UK_London_Privet%20Drive%204>
+        a       <http://data.ecommerce#Address> ;
+        <http://data.ecommerce#Customer_email>
+                <http://data.ecommerce/customers_information/harry.potter%40hogwarts.uk> .
+
+<http://data.ecommerce/customers_addresses/tonystark%40gmail.com_USA_New%20York_Manhattan%2C%20Stark%20Tower>
+        a       <http://data.ecommerce#Address> ;
+        <http://data.ecommerce#Customer_email>
+                <http://data.ecommerce/customers_information/tonystark%40gmail.com> .
+
+<http://data.ecommerce/goods_in_receipt/3_1>
+        a                              <http://data.ecommerce#Order_Description> ;
+        <http://data.ecommerce#Order>  <http://data.ecommerce/receipt_information/3> ;
+        <http://data.ecommerce#Product>
+                <http://data.ecommerce/product/1> ;
+        <http://data.ecommerce#numberof>
+                1 .
+
+<http://data.ecommerce/Has_Order_Description/3>
+        a       <http://data.ecommerce#Order> ;
+        <http://data.ecommerce#Has_Order_Description>
+                <http://data.ecommerce/Has_Order_Description/Iphone%2012_1000.00_1> .
+
+<http://data.ecommerce/receipt_information/1>
+        a                             <http://data.ecommerce#Order> ;
+        <http://data.ecommerce#Delivery_status>
+                <http://data.ecommerce/delivery_status_description/Delivered> ;
+        <http://data.ecommerce#date>  "2021-10-09"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://data.ecommerce/Has_The_Delivery_Type/1>
+        a       <http://data.ecommerce#Order> .
+
+<http://data.ecommerce/goods_in_receipt/2_1>
+        a                              <http://data.ecommerce#Order_Description> ;
+        <http://data.ecommerce#Order>  <http://data.ecommerce/receipt_information/2> ;
+        <http://data.ecommerce#Product>
+                <http://data.ecommerce/product/1> ;
+        <http://data.ecommerce#numberof>
+                1 .
+
+<http://data.ecommerce/customers_addresses/ted.mosby%40gmail.com_USA_New%20York_Manhattan%2C%20180%2C%2044>
+        a       <http://data.ecommerce#Address> ;
+        <http://data.ecommerce#Customer_email>
+                <http://data.ecommerce/customers_information/ted.mosby%40gmail.com> .
+
+<http://data.ecommerce/places_order/Ross_Geller>
+        a       <http://data.ecommerce#Customer> .
+
+<http://data.ecommerce/goods_in_receipt/1_1>
+        a                              <http://data.ecommerce#Order_Description> ;
+        <http://data.ecommerce#Order>  <http://data.ecommerce/receipt_information/1> ;
+        <http://data.ecommerce#Product>
+                <http://data.ecommerce/product/1> ;
+        <http://data.ecommerce#numberof>
+                1 .
+
+<http://data.ecommerce/customers_information/ross.geller%40gmail.com>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Delivery_Type>
+                <http://data.ecommerce/delivery_services_type/Ordinary> ;
+        <http://data.ecommerce#birth_date>
+                "1968-10-25"^^<http://www.w3.org/2001/XMLSchema#date> ;
+        <http://data.ecommerce#first_name>
+                "Ross" ;
+        <http://data.ecommerce#last_name>
+                "Geller" ;
+        <http://data.ecommerce#phone_number>
+                "+1342987444" .
+
+<http://data.ecommerce/customers_addresses/rick.sanchez%40yahoo.com_USA_Seattle_2%2C%2010>
+        a       <http://data.ecommerce#Address> ;
+        <http://data.ecommerce#Customer_email>
+                <http://data.ecommerce/customers_information/rick.sanchez%40yahoo.com> .
+
+<http://data.ecommerce/customer_receipt_connector/ardavan.khalij%40vub.be_1>
+        a                              <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Customer_email>
+                <http://data.ecommerce/customers_information/ardavan.khalij%40vub.be> ;
+        <http://data.ecommerce#Order>  <http://data.ecommerce/receipt_information/1> .
+
+<http://data.ecommerce/prefers_delivery_type/Ardavan_Khalij>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#prefers_delivery_type>
+                <http://data.ecommerce/prefers_delivery_type/Express> .
+
+<http://data.ecommerce/Has_Payment_Card/Tony_Stark>
+        a       <http://data.ecommerce#Customer> .
+
+<http://data.ecommerce/Has_Address/harry.potter%40hogwarts.uk_Harry_Potter>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Has_Address>
+                <http://data.ecommerce/Has_Address/UK_London_Privet%20Drive%204> .
+
+<http://data.ecommerce/Has_Address/rick.sanchez%40yahoo.com_Rick_Sanchez>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Has_Address>
+                <http://data.ecommerce/Has_Address/USA_Seattle_2%2C%2010> .
+
+<http://data.ecommerce/Has_Order_Description/2>
+        a       <http://data.ecommerce#Order> ;
+        <http://data.ecommerce#Has_Order_Description>
+                <http://data.ecommerce/Has_Order_Description/Iphone%2012_1000.00_1> .
+
+<http://data.ecommerce/prefers_delivery_type/Ted_Mosby>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#prefers_delivery_type>
+                <http://data.ecommerce/prefers_delivery_type/Fast> .
+
+<http://data.ecommerce/customers_addresses/ardavan.khalij%40vub.be_Belgium_Brussels_Kroonlaan%20238>
+        a       <http://data.ecommerce#Address> ;
+        <http://data.ecommerce#Customer_email>
+                <http://data.ecommerce/customers_information/ardavan.khalij%40vub.be> .
+
+<http://data.ecommerce/Has_Payment_Card/Monica_Geller>
+        a       <http://data.ecommerce#Customer> .
+
+<http://data.ecommerce/customers_information/ardavan.khalij%40vub.be>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Delivery_Type>
+                <http://data.ecommerce/delivery_services_type/Express> ;
+        <http://data.ecommerce#birth_date>
+                "1998-11-15"^^<http://www.w3.org/2001/XMLSchema#date> ;
+        <http://data.ecommerce#first_name>
+                "Ardavan" ;
+        <http://data.ecommerce#last_name>
+                "Khalij" ;
+        <http://data.ecommerce#phone_number>
+                "+32467842501" .
+
+<http://data.ecommerce/delivery_services_type/Fast>
+        a                              <http://data.ecommerce#Delivery_Type> ;
+        <http://data.ecommerce#Delivery_Type>
+                "Fast" ;
+        <http://data.ecommerce#delivery_duration>
+                35 ;
+        <http://data.ecommerce#price>  2.5E1 .
+
+<http://data.ecommerce/places_order/Ardavan_Khalij>
+        a       <http://data.ecommerce#Customer> .
+
+<http://data.ecommerce/Has_Payment_Card/Harry_Potter>
+        a       <http://data.ecommerce#Customer> .
+
+<http://data.ecommerce/Has_Delivery_Status/3>
+        a       <http://data.ecommerce#Order> ;
+        <http://data.ecommerce#Has_Delivery_Status>
+                <http://data.ecommerce/Has_Delivery_Status/Not%20Delivered> .
+
+<http://data.ecommerce/Has_Payment_Card/Ross_Geller>
+        a       <http://data.ecommerce#Customer> .
+
+<http://data.ecommerce/Has_Order_Description/1>
+        a       <http://data.ecommerce#Order> ;
+        <http://data.ecommerce#Has_Order_Description>
+                <http://data.ecommerce/Has_Order_Description/Iphone%2012_1000.00_1> .
+
+<http://data.ecommerce/customer_receipt_connector/harry.potter%40hogwarts.uk_2>
+        a                              <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Customer_email>
+                <http://data.ecommerce/customers_information/harry.potter%40hogwarts.uk> ;
+        <http://data.ecommerce#Order>  <http://data.ecommerce/receipt_information/2> .
+
+<http://data.ecommerce/Has_Address/monica.geller%40gmail.com_Monica_Geller>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Has_Address>
+                <http://data.ecommerce/Has_Address/USA_New%20York_Manhattan%2C%20223%2C%203> .
+
+<http://data.ecommerce/prefers_delivery_type/Tony_Stark>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#prefers_delivery_type>
+                <http://data.ecommerce/prefers_delivery_type/Express> .
+
+<http://data.ecommerce/Has_Address/ardavan.khalij%40vub.be_Ardavan_Khalij>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Has_Address>
+                <http://data.ecommerce/Has_Address/Iran_Tehran_Dibaji%2010> , <http://data.ecommerce/Has_Address/Belgium_Brussels_Kroonlaan%20238> .
+
+<http://data.ecommerce/prefers_delivery_type/Monica_Geller>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#prefers_delivery_type>
+                <http://data.ecommerce/prefers_delivery_type/Fast> .
+
+<http://data.ecommerce/prefers_delivery_type/Ross_Geller>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#prefers_delivery_type>
+                <http://data.ecommerce/prefers_delivery_type/Ordinary> .
+
+<http://data.ecommerce/prefers_delivery_type/Harry_Potter>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#prefers_delivery_type>
+                <http://data.ecommerce/prefers_delivery_type/Super%20fast> .
+
+<http://data.ecommerce/places_order/Harry_Potter>
+        a       <http://data.ecommerce#Customer> .
+
+<http://data.ecommerce/Has_Payment_Card/Ted_Mosby>
+        a       <http://data.ecommerce#Customer> .
+
+<http://data.ecommerce/places_order/Tony_Stark>
+        a       <http://data.ecommerce#Customer> .
+
+<http://data.ecommerce/delivery_services_type/Express>
+        a                              <http://data.ecommerce#Delivery_Type> ;
+        <http://data.ecommerce#Delivery_Type>
+                "Express" ;
+        <http://data.ecommerce#delivery_duration>
+                10 ;
+        <http://data.ecommerce#price>  4.0E1 .
+
+<http://data.ecommerce/Has_Address/ross.geller%40gmail.com_Ross_Geller>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Has_Address>
+                <http://data.ecommerce/Has_Address/USA_New%20York_Manhattan%2C%20233%2C%2023> .
+
+<http://data.ecommerce/Has_Delivery_Status/2>
+        a       <http://data.ecommerce#Order> ;
+        <http://data.ecommerce#Has_Delivery_Status>
+                <http://data.ecommerce/Has_Delivery_Status/Not%20Delivered> .
+
+<http://data.ecommerce/delivery_status_description/Delivered>
+        a       <http://data.ecommerce#Delivery_status> ;
+        <http://data.ecommerce#description>
+                "The purchase has deliverd to the customer." .
+
+<http://data.ecommerce/customers_information/rick.sanchez%40yahoo.com>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Delivery_Type>
+                <http://data.ecommerce/delivery_services_type/Express> ;
+        <http://data.ecommerce#birth_date>
+                "1958-11-15"^^<http://www.w3.org/2001/XMLSchema#date> ;
+        <http://data.ecommerce#first_name>
+                "Rick" ;
+        <http://data.ecommerce#last_name>
+                "Sanchez" ;
+        <http://data.ecommerce#phone_number>
+                "+1467844325" .
+
+<http://data.ecommerce/goods_in_receipt/1_4>
+        a                              <http://data.ecommerce#Order_Description> ;
+        <http://data.ecommerce#Order>  <http://data.ecommerce/receipt_information/1> ;
+        <http://data.ecommerce#numberof>
+                1 .
+
+<http://data.ecommerce/delivery_services_type/Super%20fast>
+        a                              <http://data.ecommerce#Delivery_Type> ;
+        <http://data.ecommerce#Delivery_Type>
+                "Super fast" ;
+        <http://data.ecommerce#delivery_duration>
+                25 ;
+        <http://data.ecommerce#price>  3.0E1 .
+
+<http://data.ecommerce/delivery_services_type/Ordinary>
+        a                              <http://data.ecommerce#Delivery_Type> ;
+        <http://data.ecommerce#Delivery_Type>
+                "Ordinary" ;
+        <http://data.ecommerce#delivery_duration>
+                45 ;
+        <http://data.ecommerce#price>  2.0E1 .
+
+<http://data.ecommerce/customers_information/harry.potter%40hogwarts.uk>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Delivery_Type>
+                <http://data.ecommerce/delivery_services_type/Super%20fast> ;
+        <http://data.ecommerce#birth_date>
+                "1992-09-19"^^<http://www.w3.org/2001/XMLSchema#date> ;
+        <http://data.ecommerce#first_name>
+                "Harry" ;
+        <http://data.ecommerce#last_name>
+                "Potter" ;
+        <http://data.ecommerce#phone_number>
+                "+44987823775" .
+
+<http://data.ecommerce/delivery_status_description/Not%20Delivered>
+        a       <http://data.ecommerce#Delivery_status> ;
+        <http://data.ecommerce#description>
+                "The purchase has not deliverd to the customer." .
+
+<http://data.ecommerce/Has_Address/tonystark%40gmail.com_Tony_Stark>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Has_Address>
+                <http://data.ecommerce/Has_Address/USA_New%20York_Manhattan%2C%20Stark%20Tower> .
+
+<http://data.ecommerce/places_order/Monica_Geller>
+        a       <http://data.ecommerce#Customer> .
+
+<http://data.ecommerce/receipt_information/3>
+        a                             <http://data.ecommerce#Order> ;
+        <http://data.ecommerce#Delivery_status>
+                <http://data.ecommerce/delivery_status_description/Not%20Delivered> ;
+        <http://data.ecommerce#date>  "2021-11-09"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://data.ecommerce/Has_The_Delivery_Type/3>
+        a       <http://data.ecommerce#Order> .
+
+<http://data.ecommerce/goods_in_receipt/2_3>
+        a                              <http://data.ecommerce#Order_Description> ;
+        <http://data.ecommerce#Order>  <http://data.ecommerce/receipt_information/2> ;
+        <http://data.ecommerce#numberof>
+                2 .
+
+<http://data.ecommerce/Has_Delivery_Status/1>
+        a       <http://data.ecommerce#Order> ;
+        <http://data.ecommerce#Has_Delivery_Status>
+                <http://data.ecommerce/Has_Delivery_Status/Delivered> .
+
+<http://data.ecommerce/goods_in_receipt/1_3>
+        a                              <http://data.ecommerce#Order_Description> ;
+        <http://data.ecommerce#Order>  <http://data.ecommerce/receipt_information/1> ;
+        <http://data.ecommerce#numberof>
+                3 .
+
+<http://data.ecommerce/places_order/Ted_Mosby>
+        a       <http://data.ecommerce#Customer> .
+
+<http://data.ecommerce/product/1>
+        a                              <http://data.ecommerce#Product> ;
+        <http://data.ecommerce#Item_condition>
+                "1" ;
+        <http://data.ecommerce#Product_Name>
+                "Iphone 12" ;
+        <http://data.ecommerce#Product_date_added>
+                "2021-10-02T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://data.ecommerce#Product_description>
+                "1" ;
+        <http://data.ecommerce#Product_price>
+                "1" ;
+        <http://data.ecommerce#brand>  "1" ;
+        <http://data.ecommerce#category>
+                "1" ;
+        <http://data.ecommerce#color>  "1" ;
+        <http://data.ecommerce#location>
+                "1" ;
+        <http://data.ecommerce#model>  "1" ;
+        <http://data.ecommerce#stockQuantity>
+                1 .
+
+<http://data.ecommerce/customers_information/monica.geller%40gmail.com>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Delivery_Type>
+                <http://data.ecommerce/delivery_services_type/Fast> ;
+        <http://data.ecommerce#birth_date>
+                "1970-09-02"^^<http://www.w3.org/2001/XMLSchema#date> ;
+        <http://data.ecommerce#first_name>
+                "Monica" ;
+        <http://data.ecommerce#last_name>
+                "Geller" ;
+        <http://data.ecommerce#phone_number>
+                "+1342987442" .
+
+<http://data.ecommerce/Has_Payment_Card/Rick_Sanchez>
+        a       <http://data.ecommerce#Customer> .
+
+<http://data.ecommerce/customers_information/ted.mosby%40gmail.com>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Delivery_Type>
+                <http://data.ecommerce/delivery_services_type/Fast> ;
+        <http://data.ecommerce#birth_date>
+                "1978-01-24"^^<http://www.w3.org/2001/XMLSchema#date> ;
+        <http://data.ecommerce#first_name>
+                "Ted" ;
+        <http://data.ecommerce#last_name>
+                "Mosby" ;
+        <http://data.ecommerce#phone_number>
+                "+1637873456" .
+
+<http://data.ecommerce/customers_addresses/ardavan.khalij%40vub.be_Iran_Tehran_Dibaji%2010>
+        a       <http://data.ecommerce#Address> ;
+        <http://data.ecommerce#Customer_email>
+                <http://data.ecommerce/customers_information/ardavan.khalij%40vub.be> .
+
+<http://data.ecommerce/goods_in_receipt/3_2>
+        a                              <http://data.ecommerce#Order_Description> ;
+        <http://data.ecommerce#Order>  <http://data.ecommerce/receipt_information/3> ;
+        <http://data.ecommerce#numberof>
+                1 .
+
+<http://data.ecommerce/receipt_information/2>
+        a                             <http://data.ecommerce#Order> ;
+        <http://data.ecommerce#Delivery_status>
+                <http://data.ecommerce/delivery_status_description/Not%20Delivered> ;
+        <http://data.ecommerce#date>  "2021-10-29"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<http://data.ecommerce/Has_Address/ted.mosby%40gmail.com_Ted_Mosby>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Has_Address>
+                <http://data.ecommerce/Has_Address/USA_New%20York_Manhattan%2C%20180%2C%2044> .
+
+<http://data.ecommerce/customers_information/tonystark%40gmail.com>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Delivery_Type>
+                <http://data.ecommerce/delivery_services_type/Express> ;
+        <http://data.ecommerce#birth_date>
+                "1976-01-05"^^<http://www.w3.org/2001/XMLSchema#date> ;
+        <http://data.ecommerce#first_name>
+                "Tony" ;
+        <http://data.ecommerce#last_name>
+                "Stark" ;
+        <http://data.ecommerce#phone_number>
+                "+1637876787" .
+
+<http://data.ecommerce/Has_The_Delivery_Type/2>
+        a       <http://data.ecommerce#Order> .
+
+<http://data.ecommerce/prefers_delivery_type/Rick_Sanchez>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#prefers_delivery_type>
+                <http://data.ecommerce/prefers_delivery_type/Express> .
+
+<http://data.ecommerce/places_order/Rick_Sanchez>
+        a       <http://data.ecommerce#Customer> .
+
+<http://data.ecommerce/goods_in_receipt/1_2>
+        a                              <http://data.ecommerce#Order_Description> ;
+        <http://data.ecommerce#Order>  <http://data.ecommerce/receipt_information/1> ;
+        <http://data.ecommerce#numberof>
+                4 .
+
+<http://data.ecommerce/customer_receipt_connector/rick.sanchez%40yahoo.com_3>
+        a                              <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Customer_email>
+                <http://data.ecommerce/customers_information/rick.sanchez%40yahoo.com> ;
+        <http://data.ecommerce#Order>  <http://data.ecommerce/receipt_information/3> .
+
+<http://data.ecommerce/customers_addresses/ross.geller%40gmail.com_USA_New%20York_Manhattan%2C%20233%2C%2023>
+        a       <http://data.ecommerce#Address> ;
+        <http://data.ecommerce#Customer_email>
+                <http://data.ecommerce/customers_information/ross.geller%40gmail.com> .
+
+<http://data.ecommerce/Has_Payment_Card/Ardavan_Khalij>
+        a       <http://data.ecommerce#Customer> .
+
+<http://data.ecommerce/customers_addresses/monica.geller%40gmail.com_USA_New%20York_Manhattan%2C%20223%2C%203>
+        a       <http://data.ecommerce#Address> ;
+        <http://data.ecommerce#Customer_email>
+                <http://data.ecommerce/customers_information/monica.geller%40gmail.com> .

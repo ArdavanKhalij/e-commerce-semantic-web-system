@@ -1,0 +1,535 @@
+# This is the vocabulary for creating R2RML
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+# This is the vocabulary of our ontology
+@prefix ecommerce: <http://data.ecommerce#>.
+
+
+<#Brand>
+a rr:TriplesMap ;
+rr:logicalTable [ rr:tableName "brand" ] ;
+rr:subjectMap [
+rr:template "http://data.ecommerce/brand/{name}" ;
+rr:class ecommerce:Brand ;
+] ;
+rr:predicateObjectMap [
+rr:predicate ecommerce:brandName ;
+rr:objectMap [ rr:column "name" ] ;
+].
+
+<#Category>
+a rr:TriplesMap ;
+rr:logicalTable [ rr:tableName "category" ] ;
+rr:subjectMap [
+rr:template "http://data.ecommerce/category/{name}" ;
+rr:class ecommerce:Category ;
+] ;
+rr:predicateObjectMap [
+rr:predicate ecommerce:categoryName ;
+rr:objectMap [ rr:column "name" ] ;
+];
+rr:predicateObjectMap [
+rr:predicate ecommerce:Category_description ;
+rr:objectMap [ rr:column "description" ] ;
+].
+
+# <#ProductImages>
+# a rr:TriplesMap ;
+# rr:logicalTable [ rr:tableName "product_images" ] ;
+# rr:subjectMap [
+# rr:template "http://data.ecommerce/{product}/{image_url}" ;
+# rr:class ecommerce:ProductImage ;
+# ] ;
+# rr:predicateObjectMap [
+# rr:predicate ecommerce:ProductImage_name ;
+# rr:objectMap [
+# rr:parentTriplesMap <#Product> ;
+# rr:joinCondition [rr:child "product" ; rr:parent "sku" ]
+# ];
+# ];
+# rr:predicateObjectMap [
+# rr:predicate ecommerce:ProductImage_url ;
+# rr:objectMap [ rr:column "image_url" ] ;
+# ].
+
+<#Admin>
+a rr:TriplesMap ;
+rr:logicalTable [ rr:tableName "admin" ] ;
+rr:subjectMap [
+rr:template "http://data.ecommerce/admin/{name}" ;
+rr:class ecommerce:Admin ;
+] ;
+rr:predicateObjectMap [
+rr:predicate ecommerce:adminName ;
+rr:objectMap [ rr:column "name" ] ;
+];
+rr:predicateObjectMap [
+rr:predicate ecommerce:Admin_telephone ;
+rr:objectMap [ rr:column "telephone" ] ;
+];
+rr:predicateObjectMap [
+rr:predicate ecommerce:Admin_email ;
+rr:objectMap [ rr:column "email" ] ;
+].
+
+<#Product>
+a rr:TriplesMap ;
+rr:logicalTable [ rr:tableName "product" ] ;
+rr:subjectMap [
+rr:template "http://data.ecommerce/product/{sku}" ;
+rr:class ecommerce:Product ;
+] ;
+rr:predicateObjectMap [
+rr:predicate ecommerce:sku;
+rr:objectMap [ rr:column "sku" ] ;
+];
+# rr:predicateObjectMap [
+# rr:predicate ecommerce:Product_name;
+# rr:objectMap [ rr:column "name" ] ;
+# ];
+rr:predicateObjectMap [
+rr:predicate ecommerce:color;
+rr:objectMap [ rr:column "color" ] ;
+];
+rr:predicateObjectMap [
+rr:predicate ecommerce:Item_condition;
+rr:objectMap [ rr:column "item_condition" ] ;
+];
+rr:predicateObjectMap [
+rr:predicate ecommerce:Product_price ;
+rr:objectMap [ rr:column "price" ] ;
+];
+rr:predicateObjectMap [
+rr:predicate ecommerce:model ;
+rr:objectMap [ rr:column "model" ] ;
+];
+rr:predicateObjectMap [
+rr:predicate ecommerce:Product_description ;
+rr:objectMap [ rr:column "description" ] ;
+];
+rr:predicateObjectMap [
+rr:predicate ecommerce:stockQuantity ;
+rr:objectMap [ rr:column "stock_quantity" ] ;
+];
+rr:predicateObjectMap [
+rr:predicate ecommerce:location ;
+rr:objectMap [ rr:column "location" ] ;
+];
+rr:predicateObjectMap [
+rr:predicate ecommerce:Product_date_added ;
+rr:objectMap [ rr:column "date_added" ] ;
+];
+rr:predicateObjectMap [
+rr:predicate ecommerce:brand ;####################
+rr:objectMap [ 
+rr:parentTriplesMap <#Brand> ;
+rr:joinCondition [rr:child "brand" ; rr:parent "name" ]
+] 
+];
+rr:predicateObjectMap [
+rr:predicate ecommerce:category ;#####################
+rr:objectMap [ 
+rr:parentTriplesMap <#Category> ;
+rr:joinCondition [rr:child "category" ; rr:parent "name" ]
+] ;
+].
+# rr:predicateObjectMap [
+# rr:predicate ecommerce:Admin_seller ; ###############
+# rr:objectMap [ 
+# rr:parentTriplesMap <#Admin> ;    
+# rr:joinCondition [rr:child "admin_seller" ; rr:parent "email" ]
+# ];
+# ];
+# rr:predicateObjectMap [
+# rr:predicate ecommerce:Supplier_seller ; ############## This and the admin_seller can be represented in a better way
+# rr:objectMap [ 
+# rr:parentTriplesMap <#Supplier> ;    
+# rr:joinCondition [rr:child "supplier_seller" ; rr:parent "bce" ]
+# ] ;
+# ].
+
+# <#Cart>
+# a rr:TriplesMap ;
+# rr:logicalTable [ rr:tableName "cart" ] ;
+# rr:subjectMap [
+# rr:template "http://data.ecommerce/cart/{customer_email}/{product}" ;
+# rr:class ecommerce:Cart ;
+# ] ;
+# rr:predicateObjectMap [
+# rr:predicate ecommerce:cCustomer ;#######################
+# rr:objectMap [ 
+# rr:parentTriplesMap <#customers_information> ;    
+# rr:joinCondition [rr:child "customer_email" ; rr:parent "email" ]    
+# ] ;
+# ];
+# rr:predicateObjectMap [
+# rr:predicate ecommerce:cProduct ;#####################
+# rr:objectMap [
+# rr:parentTriplesMap <#Product> ;    
+# rr:joinCondition [rr:child "product" ; rr:parent "sku" ] 
+# ] ;
+# ];
+# rr:predicateObjectMap [
+# rr:predicate ecommerce:Cart_date_added ;
+# rr:objectMap [ rr:column "date_added" ] ;
+# ].
+
+# <#Reviews>
+# a rr:TriplesMap ;
+# rr:logicalTable [ rr:tableName "reviews" ] ;
+# rr:subjectMap [
+# rr:template "http://data.ecommerce/review/{author}/{about}" ;
+# rr:class ecommerce:Reviews ;
+# ] ;
+# rr:predicateObjectMap [
+# rr:predicate ecommerce:review_author ; ###############
+# rr:objectMap [ 
+# rr:parentTriplesMap <#customers_information> ;    
+# rr:joinCondition [rr:child "author" ; rr:parent "email" ]
+# ] ;
+# ];
+# rr:predicateObjectMap [
+# rr:predicate ecommerce:review_product ;######################
+# rr:objectMap [
+# rr:parentTriplesMap <#Product> ;    
+# rr:joinCondition [rr:child "about" ; rr:parent "sku" ] 
+# ] ;
+# ];
+# rr:predicateObjectMap [
+# rr:predicate ecommerce:review_body ;
+# rr:objectMap [ rr:column "review_body" ] ;
+# ];
+# rr:predicateObjectMap [
+# rr:predicate ecommerce:review_ratingValue ;
+# rr:objectMap [ rr:column "review_rating_value" ] ;
+# ];
+# rr:predicateObjectMap [
+# rr:predicate ecommerce:review_dateCreated ;
+# rr:objectMap [ rr:column "date_created" ] ;
+# ];
+# rr:predicateObjectMap [
+# rr:predicate ecommerce:review_dateModified ;
+# rr:objectMap [ rr:column "date_modified" ] ;
+# ].
+
+<#Orders>
+a rr:TriplesMap ;
+rr:logicalTable [ rr:tableName "orders" ] ;
+rr:subjectMap [
+rr:template "http://data.ecommerce/order/{order_id}" ;
+rr:class ecommerce:Order ;
+] ;
+rr:predicateObjectMap [
+rr:predicate ecommerce:receipt_id ;
+rr:objectMap [ rr:column "order_id" ] ;
+];
+# rr:predicateObjectMap [
+# rr:predicate ecommerce:orderStatus ;#####################
+# rr:objectMap [
+# rr:parentTriplesMap <#delivery_status_description> ;    
+# rr:joinCondition [rr:child "order_status" ; rr:parent "delivery_status" ]  
+# ] ;
+# ];
+rr:predicateObjectMap [
+rr:predicate ecommerce:date ;
+rr:objectMap [ rr:column "order_date" ] ;
+];
+# rr:predicateObjectMap [
+# rr:predicate ecommerce:oCustomer_email ; ###################
+# rr:objectMap [ 
+# rr:parentTriplesMap <#customers_information> ;    
+# rr:joinCondition [rr:child "customer_email" ; rr:parent "email" ] 
+# ] ;
+# ];
+# rr:predicateObjectMap [
+# rr:predicate ecommerce:oCustomer_address ; ##################
+# rr:objectMap [ 
+# rr:parentTriplesMap <#customers_addresses> ;    
+# rr:joinCondition [rr:child "customer_address" ; rr:parent "address" ]  
+# ] ;
+# ];
+# rr:predicateObjectMap [
+# rr:predicate ecommerce:oDelivery_kind ; ######################
+# rr:objectMap [ 
+# rr:parentTriplesMap <#delivery_services_type> ;    
+# rr:joinCondition [rr:child "delivery_service" ; rr:parent "delivery_kind" ]  
+# ] ;
+# ];
+rr:predicateObjectMap [
+rr:predicate ecommerce:orderAmount ;
+rr:objectMap [ rr:column "order_amount" ] ;
+].
+
+# <#OrderDescription>
+# a rr:TriplesMap ;
+# rr:logicalTable [ rr:tableName "order_description" ] ;
+# rr:subjectMap [
+# rr:template "http://data.ecommerce/order/{order}/{product}" ;
+# rr:class ecommerce:Order_Description ;
+# ] ;
+# rr:predicateObjectMap [
+# rr:predicate ecommerce:d_order ; ###############
+# rr:objectMap [ 
+# rr:parentTriplesMap <#Orders> ;    
+# rr:joinCondition [rr:child "order" ; rr:parent "order_id" ] 
+# ] ;
+# ];
+# rr:predicateObjectMap [
+# rr:predicate ecommerce:d_product ;######################
+# rr:objectMap [ 
+# rr:parentTriplesMap <#Product> ;    
+# rr:joinCondition [rr:child "product" ; rr:parent "sku" ] 
+# ] ;
+# ];
+# rr:predicateObjectMap [
+# rr:predicate ecommerce:orderQuantity ;
+# rr:objectMap [ rr:column "quantity" ] ;
+# ].
+
+#
+<#customers_information>
+a rr:TriplesMap ;
+rr:logicalTable [rr:tableName "customers_information"];
+rr:subjectMap [
+rr:template "http://data.ecommerce/customer/{first_name}_{last_name}" ;
+rr:class ecommerce:Customer ;
+] ;
+rr:predicateObjectMap [
+rr:predicate ecommerce:Customer_email ;
+rr:objectMap [ rr:column "email" ] ;
+];
+rr:predicateObjectMap [
+rr:predicate ecommerce:first_name ;
+rr:objectMap [ rr:column "first_name" ] ;
+];
+rr:predicateObjectMap [
+rr:predicate ecommerce:last_name ;
+rr:objectMap [ rr:column "last_name" ] ;
+];
+# rr:predicateObjectMap [
+# rr:predicate ecommerce:delivery_kind ;####################
+# rr:objectMap [
+# rr:parentTriplesMap <#delivery_services_type> ;    
+# rr:joinCondition [rr:child "delivery_kind" ; rr:parent "delivery_kind" ]
+# ];
+# ];   
+rr:predicateObjectMap [
+rr:predicate ecommerce:birth_date ;
+rr:objectMap [ rr:column "birth_date" ] ;
+].
+
+<#customers_addresses>
+a rr:TriplesMap ;
+rr:logicalTable [rr:tableName "customers_addresses"];
+rr:subjectMap [
+rr:template "http://data.ecommerce/address/{address}" ;
+rr:class ecommerce:Address ;
+] ;
+rr:predicateObjectMap [
+rr:predicate ecommerce:Address_address ;
+rr:objectMap [ rr:column "address" ] ;
+];
+rr:predicateObjectMap [
+rr:predicate ecommerce:Customer_email ;####################
+rr:objectMap [
+rr:parentTriplesMap <#customers_information> ;    
+rr:joinCondition [rr:child "email" ; rr:parent "email" ]
+];
+].
+
+
+<#delivery_services_type>
+a rr:TriplesMap ;
+rr:logicalTable [ rr:tableName "delivery_services_type" ] ;
+rr:subjectMap [
+rr:template "http://data.ecommerce/delivery_kind/{delivery_kind}" ;
+] ;
+rr:predicateObjectMap [
+rr:predicate ecommerce:price ;
+rr:objectMap [ rr:column "price" ] ;
+];
+rr:predicateObjectMap [
+rr:predicate ecommerce:delivery_duration ;
+rr:objectMap [ rr:column "delivery_duration" ] ;
+].
+<#normal_delivery_service>
+a rr:TriplesMap ;
+rr:logicalTable [ rr:sqlQuery """SELECT * FROM delivery_services_type WHERE delivery_kind = 'Normal'""" ] ;
+rr:subjectMap [
+rr:template "http://data.ecommerce/delivery_kind/Normal" ;
+rr:class ecommerce:Normal ;
+].
+<#premium_delivery_service>
+a rr:TriplesMap ;
+rr:logicalTable [ rr:sqlQuery """SELECT * FROM delivery_services_type WHERE delivery_kind = 'Premium'""" ] ;
+rr:subjectMap [
+rr:template "http://data.ecommerce/delivery_kind/Premium" ;
+rr:class ecommerce:Perimum ;
+].
+
+<#delivery_status_description>
+a rr:TriplesMap ;
+rr:logicalTable [ rr:tableName "delivery_status_description" ] ;
+rr:subjectMap [
+rr:template "http://data.ecommerce/delivery_status/{delivery_status}" ;
+] ;
+rr:predicateObjectMap [
+rr:predicate ecommerce:description ;
+rr:objectMap [ rr:column "description" ] ;
+].
+<#delivered_delivery_status>
+a rr:TriplesMap ;
+rr:logicalTable [ rr:sqlQuery """SELECT * FROM delivery_status_description WHERE delivery_status = 'Delivered'""" ] ;
+rr:subjectMap [
+rr:template "http://data.ecommerce/delivery_status/Delivered" ;
+rr:class ecommerce:Delivered ;
+].
+<#not_delivered_delivery_status>
+a rr:TriplesMap ;
+rr:logicalTable [ rr:sqlQuery """SELECT * FROM delivery_status_description WHERE delivery_status = 'notDelivered'""" ] ;
+rr:subjectMap [
+rr:template "http://data.ecommerce/delivery_status/notDelivered" ;
+rr:class ecommerce:Not_Delivered ;
+].
+
+#3
+<#Supplier>
+a rr:TriplesMap ;
+rr:logicalTable [rr:tableName "supplier"];
+rr:subjectMap [
+rr:template "http://data.ecommerce/supplier/{bce}" ;
+rr:class ecommerce:supplier ;
+] ;
+rr:predicateObjectMap [
+rr:predicate ecommerce:bce ;
+rr:objectMap [ rr:column "bce" ] ;
+];
+rr:predicateObjectMap [
+rr:predicate ecommerce:Supplier_companyName ;
+rr:objectMap [ rr:column "company_name" ] ;
+];
+rr:predicateObjectMap [
+rr:predicate ecommerce:Supplier_email ;
+rr:objectMap [ rr:column "email" ] ;
+];
+rr:predicateObjectMap [
+rr:predicate ecommerce:Supplier_ph ;
+rr:objectMap [ rr:column "telephone" ] ;
+];
+rr:predicateObjectMap [
+rr:predicate ecommerce:Supplier_url ;
+rr:objectMap [ rr:column "url" ] ;
+];
+rr:predicateObjectMap [
+rr:predicate ecommerce:Supplier_country ;
+rr:objectMap [ rr:column "address_country" ] ;
+];
+rr:predicateObjectMap [
+rr:predicate ecommerce:Supplier_city ;
+rr:objectMap [ rr:column "address_city" ] ;
+];
+rr:predicateObjectMap [
+rr:predicate ecommerce:Supplier_postalCode ;
+rr:objectMap [ rr:column "postal_code" ] ;
+];
+rr:predicateObjectMap [
+rr:predicate ecommerce:supplier_addressLocality ;
+rr:objectMap [ rr:column "address_locality" ] ;
+];
+rr:predicateObjectMap [
+rr:predicate ecommerce:Supplier_streetAddress ;
+rr:objectMap [ rr:column "street_address" ] ;
+].
+
+#Object properties
+
+<#places_order>
+rr:logicalTable [rr:sqlQuery """SELECT Cus.email, Cus.first_name, Cus.last_name, Ord.customer_email, Ord.order_id
+                                FROM public.customers_information Cus
+                                INNER JOIN public.orders Ord ON Cus.email=Ord.customer_email"""];
+rr:subjectMap[
+rr:template "http://data.ecommerce/customer/{first_name}_{last_name}";
+rr:class ecommerce:Customer;
+];
+rr:predicateObjectMap[
+rr:predicate ecommerce:places_order;
+rr:objectMap[
+    rr:template "http://data.ecommerce/order/{order_id}";
+]
+].
+
+# <#Has_Order_Description>
+# rr:logicalTable [rr:sqlQuery """SELECT Ord.order_id, Descr.order, Descr.product
+#                                 FROM public.orders Ord
+#                                 INNER JOIN public.order_description Descr ON Ord.order_id=Descr.order"""];
+# rr:subjectMap[
+# rr:template "http://data.ecommerce/order/{order_id}";
+# rr:class ecommerce:Order;
+# ];
+# rr:predicateObjectMap[
+# rr:predicate ecommerce:Has_Order_Description;
+# rr:objectMap[
+#     rr:template "http://data.ecommerce/order/{order}/{product}";
+# ]
+# ].
+
+# <#carts>
+# rr:logicalTable [rr:sqlQuery """SELECT Cus.email, Cus.first_name, Cus.last_name, cart.customer_email, cart.product, Prod.sku
+#                                 FROM public.customers_information Cus
+#                                 INNER JOIN public.cart  ON Cus.email=cart.customer_email
+#                                 INNER JOIN public.product Prod ON cart.product=Prod.sku"""];
+# rr:subjectMap[
+# rr:template "http://data.ecommerce/customer/{first_name}_{last_name}";
+# rr:class ecommerce:Customer;
+# ];
+# rr:predicateObjectMap[
+# rr:predicate ecommerce:carts;
+# rr:objectMap[
+#     rr:template "http://data.ecommerce/product/{sku}";
+# ]
+# ].
+
+# <#reviews>
+# rr:logicalTable [rr:sqlQuery """SELECT Cus.email, Cus.first_name, Cus.last_name, Rev.author, Rev.about, Prod.sku
+#                                 FROM public.customers_information Cus
+#                                 INNER JOIN public.reviews Rev ON Cus.email=Rev.author
+#                                 INNER JOIN public.product Prod ON Rev.about=Prod.sku"""];
+# rr:subjectMap[
+# rr:template "http://data.ecommerce/customer/{first_name}_{last_name}";
+# rr:class ecommerce:Customer;
+# ];
+# rr:predicateObjectMap[
+# rr:predicate ecommerce:reviews;
+# rr:objectMap[
+#     rr:template "http://data.ecommerce/product/{sku}";
+# ]
+# ].
+
+<#Admin_advertises>
+rr:logicalTable [rr:sqlQuery """SELECT admin.email, admin.name, Prod.sku, Prod.admin_seller
+                                FROM public.admin
+                                INNER JOIN public.product Prod ON admin.email=Prod.admin_seller"""];
+rr:subjectMap[
+rr:template "http://data.ecommerce/admin/{name}";
+rr:class ecommerce:Admin;
+];
+rr:predicateObjectMap[
+rr:predicate ecommerce:Admin_advertises;
+rr:objectMap[
+    rr:template "http://data.ecommerce/product/{sku}";
+]
+].
+
+<#Supplier_advertises>
+rr:logicalTable [rr:sqlQuery """SELECT supplier.bce, Prod.sku, Prod.supplier_seller
+                                FROM public.supplier
+                                INNER JOIN public.product Prod ON supplier.bce=Prod.supplier_seller"""];
+rr:subjectMap[
+rr:template "http://data.ecommerce/supplier/{bce}";
+rr:class ecommerce:supplier;
+];
+rr:predicateObjectMap[
+rr:predicate ecommerce:Supplier_advertises;
+rr:objectMap[
+    rr:template "http://data.ecommerce/product/{sku}";
+]
+].

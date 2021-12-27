@@ -1,0 +1,37 @@
+\babel@toc {english}{}
+\contentsline {section}{\numberline {1}Introduction}{2}{}%
+\contentsline {subsection}{\numberline {1.1}Modules}{2}{}%
+\contentsline {subsection}{\numberline {1.2}Features and data}{2}{}%
+\contentsline {subsubsection}{\numberline {1.2.1}Products}{2}{}%
+\contentsline {subsubsection}{\numberline {1.2.2}Warehouses}{3}{}%
+\contentsline {subsubsection}{\numberline {1.2.3}Costumers}{4}{}%
+\contentsline {subsubsection}{\numberline {1.2.4}Suppliers}{4}{}%
+\contentsline {subsubsection}{\numberline {1.2.5}Delivery services}{5}{}%
+\contentsline {subsection}{\numberline {1.3}Work division}{5}{}%
+\contentsline {section}{\numberline {2}Ontology}{6}{}%
+\contentsline {subsection}{\numberline {2.1}Products}{6}{}%
+\contentsline {subsubsection}{\numberline {2.1.1}Naming differences}{6}{}%
+\contentsline {subsubsection}{\numberline {2.1.2}Design and structure differences}{6}{}%
+\contentsline {subsection}{\numberline {2.2}Warehouses}{6}{}%
+\contentsline {subsubsection}{\numberline {2.2.1}Naming differences}{6}{}%
+\contentsline {subsubsection}{\numberline {2.2.2}Design and structure differences}{7}{}%
+\contentsline {subsection}{\numberline {2.3}Costumers}{7}{}%
+\contentsline {subsubsection}{\numberline {2.3.1}Naming differences}{7}{}%
+\contentsline {subsubsection}{\numberline {2.3.2}Design and structure differences}{7}{}%
+\contentsline {subsection}{\numberline {2.4}Suppliers}{7}{}%
+\contentsline {subsubsection}{\numberline {2.4.1}Naming differences}{8}{}%
+\contentsline {subsubsection}{\numberline {2.4.2}Design and structure differences}{8}{}%
+\contentsline {subsection}{\numberline {2.5}Delivery services}{8}{}%
+\contentsline {subsubsection}{\numberline {2.5.1}Naming Difference}{8}{}%
+\contentsline {subsubsection}{\numberline {2.5.2}Design and structure differences}{9}{}%
+\contentsline {subsection}{\numberline {2.6}Representation of the ontology}{9}{}%
+\contentsline {section}{\numberline {3}Mapping}{9}{}%
+\contentsline {subsection}{\numberline {3.1}Design decisions}{10}{}%
+\contentsline {subsection}{\numberline {3.2}Complications}{10}{}%
+\contentsline {section}{\numberline {4}Queries}{11}{}%
+\contentsline {subsection}{\numberline {4.1}Products: Product information}{11}{}%
+\contentsline {subsection}{\numberline {4.2}Warehouses: Stock quantity sorted with extra information}{12}{}%
+\contentsline {subsection}{\numberline {4.3}Costumers: Users with at least one complete address}{13}{}%
+\contentsline {subsection}{\numberline {4.4}Costumers: Customers with orders and the total amount of their orders}{14}{}%
+\contentsline {subsection}{\numberline {4.5}Suppliers: Products with higher profit margin}{15}{}%
+\contentsline {section}{\numberline {5}Discussion}{16}{}%

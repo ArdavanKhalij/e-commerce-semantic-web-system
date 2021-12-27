@@ -1,0 +1,170 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix ecommerce: <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#>.
+
+#Warehouse mapping
+<#warehouse>
+  a rr:TriplesMap;
+  rr:logicalTable [
+    rr:tableName "warehouse"
+  ];
+  rr:subjectMap [
+    rr:template "http://data.ecommerce/warehouse/{warehousecode}";
+    rr:class ecommerce:Warehouse;
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:warehousecode;
+    rr:objectMap [rr:column "warehousecode"]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:companyname;
+    rr:objectMap [rr:column "companyname"]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:email;
+    rr:objectMap [rr:column "email"]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:telephone;
+    rr:objectMap [rr:column "telephone"]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:addresscountry;
+    rr:objectMap [rr:column "addresscountry"]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:addresscity;
+    rr:objectMap [rr:column "addresscity"]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:addresslocality;
+    rr:objectMap [rr:column "addresslocality"]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:postalcode;
+    rr:objectMap [rr:column "postalcode"]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:streetaddress;
+    rr:objectMap [rr:column "streetaddress"]
+  ].
+
+
+#Inventory mapping
+<#Inventory>
+  a rr:TriplesMap;
+  rr:logicalTable [
+    rr:tableName "inventory"
+  ];
+  rr:subjectMap [
+    rr:template "http://data.ecommerce/inventory/{productsku_fk}_{warehousecode_fk}";
+    rr:class ecommerce:Inventory;
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:warehousecode;
+    rr:objectMap [rr:column "warehousecode_fk"]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:quantity;
+    rr:objectMap [rr:column "quantity"]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:productsku_fk;
+    rr:objectMap [rr:column "productsku_fk"]
+  ].
+
+#warehouse_has mapping
+<#warehouse_has>
+  rr:logicalTable [
+  rr:sqlQuery """SELECT A.warehousecode AS warehousecode,
+                  B.warehousecode_fk,
+                  B.productsku_fk
+                  FROM warehouse A INNER JOIN inventory B ON warehousecode=B.warehousecode_fk"""
+  ];
+  rr:subjectMap [
+    rr:template "http://data.ecommerce/warehouse/{warehousecode}";
+    rr:class ecommerce:warehouse;
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:warehouse_has;
+    rr:objectMap [
+      rr:template "http://data.ecommerce/inventory/{productsku_fk}_{warehousecode_fk}";
+    ];
+  ].
+
+#product mapping
+<#product>
+a rr:TriplesMap ;
+  rr:logicalTable [
+    rr:tableName "product"
+  ];
+  rr:subjectMap [
+    rr:template "http://data.ecommerce/product/{sku}";
+    rr:class ecommerce:Product;
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:sku ;
+    rr:objectMap [rr:column "sku"];
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:Product_description ;
+    rr:objectMap [rr:column "name"];
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:color ;
+    rr:objectMap [rr:column "color"];
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:Item_condition ;
+    rr:objectMap [rr:column "itemcondition"];
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:Product_description ;
+    rr:objectMap [rr:column "description"];
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:stockQuantity ;
+    rr:objectMap [rr:column "stockquantity"];
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:location ;
+    rr:objectMap [rr:column "location"];
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:Product_date_added ;
+    rr:objectMap [rr:column "dateadded"];
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:brand ;
+    rr:objectMap [rr:column "brand"];
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:category ;
+    rr:objectMap [rr:column "category"];
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:Product_price ;
+    rr:objectMap [rr:column "category"];
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:model ;
+    rr:objectMap [rr:column "model"];
+  ].
+
+#inventory_has mapping
+<#inventory_has>
+  rr:logicalTable [
+  rr:sqlQuery """SELECT A.warehousecode_fk,
+                  A.productsku_fk,
+                  B.sku
+                  FROM inventory A INNER JOIN product B ON A.productsku_fk=B.sku"""
+  ];
+  rr:subjectMap [
+    rr:template "http://data.ecommerce/inventory/{productsku_fk}_{warehousecode_fk}";
+    rr:class ecommerce:inventory;
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:inventory_has;
+      rr:objectMap [
+      rr:template "http://data.ecommerce/product/{sku}";
+    ];
+  ].

@@ -1,0 +1,2111 @@
+<http://data.ecommerce/address/61702%20Atwood%20Plaza,33175%20High%20Crossing,Miami,United%20States>
+        a       <http://data.ecommerce#Address> ;
+        <http://data.ecommerce#Address_address>
+                "61702 Atwood Plaza,33175 High Crossing,Miami,United States" ;
+        <http://data.ecommerce#Customer_email>
+                <http://data.ecommerce/customer/Annette_Rosterne> .
+
+<http://data.ecommerce/category/Grocery>
+        a       <http://data.ecommerce#Category> ;
+        <http://data.ecommerce#categoryName>
+                "Grocery" .
+
+<http://data.ecommerce/address/23272%09Kings,%208683%20Golden%20Leaf%20Point,Carlifonia,United%20States>
+        a       <http://data.ecommerce#Address> ;
+        <http://data.ecommerce#Address_address>
+                "23272\tKings, 8683 Golden Leaf Point,Carlifonia,United States" ;
+        <http://data.ecommerce#Customer_email>
+                <http://data.ecommerce/customer/Delly_Lapthorn> .
+
+<http://data.ecommerce/order/81dfc1d4-5078>
+        a                             <http://data.ecommerce#Order> ;
+        <http://data.ecommerce#date>  "2021-11-01 18:41:19.0"^^<java:java.sql.Timestamp> ;
+        <http://data.ecommerce#orderAmount>
+                "2000"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://data.ecommerce#receipt_id>
+                "81dfc1d4-5078" .
+
+<http://data.ecommerce/customer/Jo-anne_Frankling>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Customer_email>
+                "jfrankling8@people.com.cn" ;
+        <http://data.ecommerce#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://data.ecommerce#first_name>
+                "Jo-anne" ;
+        <http://data.ecommerce#last_name>
+                "Frankling" ;
+        <http://data.ecommerce#places_order>
+                <http://data.ecommerce/order/a2b72693-6dd6> .
+
+<http://data.ecommerce/customer/Mose_Solomonides>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Customer_email>
+                "msolomonidesi@gnu.org" ;
+        <http://data.ecommerce#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://data.ecommerce#first_name>
+                "Mose" ;
+        <http://data.ecommerce#last_name>
+                "Solomonides" .
+
+<http://data.ecommerce/customer/Leland_Bermingham>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Customer_email>
+                "lberminghama@jiathis.com" ;
+        <http://data.ecommerce#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://data.ecommerce#first_name>
+                "Leland" ;
+        <http://data.ecommerce#last_name>
+                "Bermingham" .
+
+<http://data.ecommerce/address/WF9%09Crownhardt%0939%20Kensington%20Plaza,Upton,United%20Kingdom>
+        a       <http://data.ecommerce#Address> ;
+        <http://data.ecommerce#Address_address>
+                "WF9\tCrownhardt\t39 Kensington Plaza,Upton,United Kingdom" ;
+        <http://data.ecommerce#Customer_email>
+                <http://data.ecommerce/customer/Karlik_Sinnatt> .
+
+<http://data.ecommerce/address/B40%09Hauk%0948067%20Oak%20Park,Birmingham,United%20Kingdom>
+        a       <http://data.ecommerce#Address> ;
+        <http://data.ecommerce#Address_address>
+                "B40\tHauk\t48067 Oak Park,Birmingham,United Kingdom" ;
+        <http://data.ecommerce#Customer_email>
+                <http://data.ecommerce/customer/Joye_Vigar> .
+
+<http://data.ecommerce/address/3%20Portage%20Plaza,6042%20Waubesa,Charleroi,BelgiumBelgium>
+        a       <http://data.ecommerce#Address> ;
+        <http://data.ecommerce#Address_address>
+                "3 Portage Plaza,6042 Waubesa,Charleroi,BelgiumBelgium" ;
+        <http://data.ecommerce#Customer_email>
+                <http://data.ecommerce/customer/Jo-anne_Frankling> .
+
+<http://data.ecommerce/address/SY4%09Dakota%09338%20Lake%20View%20Crossing,London,United%20Kingdom>
+        a       <http://data.ecommerce#Address> ;
+        <http://data.ecommerce#Address_address>
+                "SY4\tDakota\t338 Lake View Crossing,London,United Kingdom" ;
+        <http://data.ecommerce#Customer_email>
+                <http://data.ecommerce/customer/Dinny_Duckels> .
+
+<http://data.ecommerce/brand/Apple>
+        a       <http://data.ecommerce#Brand> ;
+        <http://data.ecommerce#brandName>
+                "Apple" .
+
+<http://data.ecommerce/supplier/9046126335>
+        a                            <http://data.ecommerce#supplier> ;
+        <http://data.ecommerce#Supplier_city>
+                "Ghent" ;
+        <http://data.ecommerce#Supplier_companyName>
+                "Appario Retail Private Ltd" ;
+        <http://data.ecommerce#Supplier_country>
+                "BEL" ;
+        <http://data.ecommerce#Supplier_email>
+                "contact@appario.com" ;
+        <http://data.ecommerce#Supplier_ph>
+                "+32956874213" ;
+        <http://data.ecommerce#Supplier_postalCode>
+                "1600" ;
+        <http://data.ecommerce#Supplier_streetAddress>
+                "Boulevard General Dupont, 271" ;
+        <http://data.ecommerce#Supplier_url>
+                "appario.com" ;
+        <http://data.ecommerce#bce>  "9046126335" ;
+        <http://data.ecommerce#supplier_addressLocality>
+                "gbesse" .
+
+<http://data.ecommerce/category/Mobiles>
+        a       <http://data.ecommerce#Category> ;
+        <http://data.ecommerce#Category_description>
+                "Mobile devices, earphones, mobile accessories..." ;
+        <http://data.ecommerce#categoryName>
+                "Mobiles" .
+
+<http://data.ecommerce/address/DN21%09Ridgeway%0909%20Porter%20Trail,Upton,United%20Kingdom>
+        a       <http://data.ecommerce#Address> ;
+        <http://data.ecommerce#Address_address>
+                "DN21\tRidgeway\t09 Porter Trail,Upton,United Kingdom" ;
+        <http://data.ecommerce#Customer_email>
+                <http://data.ecommerce/customer/Sigismondo_Ormrod> .
+
+<http://data.ecommerce/address/92153%09Straubel%2058%20Waxwing%20Place,San%20Diego,United%20States>
+        a       <http://data.ecommerce#Address> ;
+        <http://data.ecommerce#Address_address>
+                "92153\tStraubel 58 Waxwing Place,San Diego,United States" ;
+        <http://data.ecommerce#Customer_email>
+                <http://data.ecommerce/customer/Orville_Cubberley> .
+
+<http://data.ecommerce/order/4abf8353-487f>
+        a                             <http://data.ecommerce#Order> ;
+        <http://data.ecommerce#date>  "2021-11-01 18:41:19.0"^^<java:java.sql.Timestamp> ;
+        <http://data.ecommerce#orderAmount>
+                "2000"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://data.ecommerce#receipt_id>
+                "4abf8353-487f" .
+
+<http://data.ecommerce/customer/Mallory_Shiel>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Customer_email>
+                "mshielg@jimdo.com" ;
+        <http://data.ecommerce#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://data.ecommerce#first_name>
+                "Mallory" ;
+        <http://data.ecommerce#last_name>
+                "Shiel" .
+
+<http://data.ecommerce/supplier/8146196691>
+        a                            <http://data.ecommerce#supplier> ;
+        <http://data.ecommerce#Supplier_city>
+                "Seol" ;
+        <http://data.ecommerce#Supplier_companyName>
+                "Samsung Inc." ;
+        <http://data.ecommerce#Supplier_country>
+                "SKR" ;
+        <http://data.ecommerce#Supplier_email>
+                "business@samsung.com" ;
+        <http://data.ecommerce#Supplier_ph>
+                "+459654892330" ;
+        <http://data.ecommerce#Supplier_postalCode>
+                "1831" ;
+        <http://data.ecommerce#Supplier_streetAddress>
+                "Geneva Building, Leonardo da Vincilaan 19" ;
+        <http://data.ecommerce#Supplier_url>
+                "samsung.skr" ;
+        <http://data.ecommerce#bce>  "8146196691" ;
+        <http://data.ecommerce#supplier_addressLocality>
+                "Suwon-si" .
+
+<http://data.ecommerce/address/46202%09Basil%098%20Fair%20Oaks%20Pass,Carlifonia,United%20States>
+        a       <http://data.ecommerce#Address> ;
+        <http://data.ecommerce#Address_address>
+                "46202\tBasil\t8 Fair Oaks Pass,Carlifonia,United States" ;
+        <http://data.ecommerce#Customer_email>
+                <http://data.ecommerce/customer/Felita_Kemet> .
+
+<http://data.ecommerce/address/CT16%09Thompson%093%20Carioca%20Plaza,London,United%20Kingdom>
+        a       <http://data.ecommerce#Address> ;
+        <http://data.ecommerce#Address_address>
+                "CT16\tThompson\t3 Carioca Plaza,London,United Kingdom" ;
+        <http://data.ecommerce#Customer_email>
+                <http://data.ecommerce/customer/Joyce_Long> .
+
+<http://data.ecommerce/category/Women's%20Fashion>
+        a       <http://data.ecommerce#Category> ;
+        <http://data.ecommerce#Category_description>
+                "Clothes, shoes, jewelery..." ;
+        <http://data.ecommerce#categoryName>
+                "Women's Fashion" .
+
+<http://data.ecommerce/admin/Martha%20Brna>
+        a       <http://data.ecommerce#Admin> ;
+        <http://data.ecommerce#Admin_advertises>
+                <http://data.ecommerce/product/08749f5a-ed6c-493c-9f63> , <http://data.ecommerce/product/9fecf700-ddb6-4740-8e8f> , <http://data.ecommerce/product/21bca5f9-a789-48c9-82a0> , <http://data.ecommerce/product/076e2af4-37b2-4ec0-8c2e> , <http://data.ecommerce/product/97e94d6a-aea2-4695-9722> , <http://data.ecommerce/product/3aaaa278-1de4-480c-8baa> , <http://data.ecommerce/product/4cd04183-a0da-4bf3-aedb> , <http://data.ecommerce/product/e4f7d42f-2232-422d-91f1> ;
+        <http://data.ecommerce#Admin_email>
+                "martin.brna@soko.com" ;
+        <http://data.ecommerce#Admin_telephone>
+                "+32466251959" ;
+        <http://data.ecommerce#adminName>
+                "Martha Brna" .
+
+<http://data.ecommerce/customer/Huey_Pudge>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Customer_email>
+                "hpudge6@mozilla.com" ;
+        <http://data.ecommerce#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://data.ecommerce#first_name>
+                "Huey" ;
+        <http://data.ecommerce#last_name>
+                "Pudge" .
+
+<http://data.ecommerce/address/BT66%09Schlimgen%09275%20Stuart%20Trail,London,United%20Kingdom>
+        a       <http://data.ecommerce#Address> ;
+        <http://data.ecommerce#Address_address>
+                "BT66\tSchlimgen\t275 Stuart Trail,London,United Kingdom" ;
+        <http://data.ecommerce#Customer_email>
+                <http://data.ecommerce/customer/Mallory_Shiel> .
+
+<http://data.ecommerce/product/51235f3d-4fbe-402b-9bbc>
+        a                              <http://data.ecommerce#Product> ;
+        <http://data.ecommerce#Item_condition>
+                "New" ;
+        <http://data.ecommerce#Product_date_added>
+                "2021-10-11 16:51:12.0"^^<java:java.sql.Timestamp> ;
+        <http://data.ecommerce#Product_description>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dictum purus. Vestibulum nisl risus, dapibus sit amet vestibulum dignissim, aliquet quis eros." ;
+        <http://data.ecommerce#Product_price>
+                "950"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://data.ecommerce#brand>  <http://data.ecommerce/brand/Apple> ;
+        <http://data.ecommerce#category>
+                <http://data.ecommerce/category/Mobiles> ;
+        <http://data.ecommerce#color>  "Black" ;
+        <http://data.ecommerce#location>
+                "Brussels" ;
+        <http://data.ecommerce#model>  "MBP22HN/A" ;
+        <http://data.ecommerce#sku>    "51235f3d-4fbe-402b-9bbc" ;
+        <http://data.ecommerce#stockQuantity>
+                "84"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://data.ecommerce/customer/Theresa_Artz>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Customer_email>
+                "tartza@ask.com" ;
+        <http://data.ecommerce#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://data.ecommerce#first_name>
+                "Theresa" ;
+        <http://data.ecommerce#last_name>
+                "Artz" ;
+        <http://data.ecommerce#places_order>
+                <http://data.ecommerce/order/0b7deade-5fee> .
+
+<http://data.ecommerce/product/161ef15e-5908-45fa-b3d3>
+        a                              <http://data.ecommerce#Product> ;
+        <http://data.ecommerce#Item_condition>
+                "New" ;
+        <http://data.ecommerce#Product_date_added>
+                "2021-11-06 18:41:19.0"^^<java:java.sql.Timestamp> ;
+        <http://data.ecommerce#Product_description>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dictum purus. Vestibulum nisl risus, dapibus sit amet vestibulum dignissim, aliquet quis eros." ;
+        <http://data.ecommerce#Product_price>
+                "1000"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://data.ecommerce#brand>  <http://data.ecommerce/brand/Asus> ;
+        <http://data.ecommerce#category>
+                <http://data.ecommerce/category/Computers> ;
+        <http://data.ecommerce#color>  "Transparent Silver" ;
+        <http://data.ecommerce#location>
+                "Ghent" ;
+        <http://data.ecommerce#model>  "VivoBook 14 (2021)" ;
+        <http://data.ecommerce#sku>    "161ef15e-5908-45fa-b3d3" ;
+        <http://data.ecommerce#stockQuantity>
+                "55"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://data.ecommerce/order/b30f3919-7595>
+        a                             <http://data.ecommerce#Order> ;
+        <http://data.ecommerce#date>  "2021-11-01 18:41:19.0"^^<java:java.sql.Timestamp> ;
+        <http://data.ecommerce#orderAmount>
+                "2000"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://data.ecommerce#receipt_id>
+                "b30f3919-7595" .
+
+<http://data.ecommerce/address/25700%20Oakridge%20Center,1170%20Hooker,Brussels,Belgium>
+        a       <http://data.ecommerce#Address> ;
+        <http://data.ecommerce#Address_address>
+                "25700 Oakridge Center,1170 Hooker,Brussels,Belgium" ;
+        <http://data.ecommerce#Customer_email>
+                <http://data.ecommerce/customer/Gonzales_Landy> .
+
+<http://data.ecommerce/admin/Dave%20Sabonis>
+        a       <http://data.ecommerce#Admin> ;
+        <http://data.ecommerce#Admin_advertises>
+                <http://data.ecommerce/product/b1700344-d908-45e2-9bc4> , <http://data.ecommerce/product/cf490540-e13b-4588-86b2> ;
+        <http://data.ecommerce#Admin_email>
+                "dave.sabonis@soko.com" ;
+        <http://data.ecommerce#Admin_telephone>
+                "+79976625190" ;
+        <http://data.ecommerce#adminName>
+                "Dave Sabonis" .
+
+<http://data.ecommerce/customer/Bren_Casillis>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Customer_email>
+                "bcasillis0@dropbox.com" ;
+        <http://data.ecommerce#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://data.ecommerce#first_name>
+                "Bren" ;
+        <http://data.ecommerce#last_name>
+                "Casillis" ;
+        <http://data.ecommerce#places_order>
+                <http://data.ecommerce/order/eb258842-6691> .
+
+<http://data.ecommerce/customer/Sigismondo_Ormrod>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Customer_email>
+                "sormrod9@tuttocitta.it" ;
+        <http://data.ecommerce#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://data.ecommerce#first_name>
+                "Sigismondo" ;
+        <http://data.ecommerce#last_name>
+                "Ormrod" ;
+        <http://data.ecommerce#places_order>
+                <http://data.ecommerce/order/08772404-bc1b> .
+
+<http://data.ecommerce/customer/Myrlene_Alderwick>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Customer_email>
+                "malderwickb@hp.com" ;
+        <http://data.ecommerce#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://data.ecommerce#first_name>
+                "Myrlene" ;
+        <http://data.ecommerce#last_name>
+                "Alderwick" .
+
+<http://data.ecommerce/customer/Paul_Enoch>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Customer_email>
+                "penoch4@illinois.edu" ;
+        <http://data.ecommerce#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://data.ecommerce#first_name>
+                "Paul" ;
+        <http://data.ecommerce#last_name>
+                "Enoch" ;
+        <http://data.ecommerce#places_order>
+                <http://data.ecommerce/order/3cc735c1-74d4> .
+
+<http://data.ecommerce/category/TV%20&%20Camera>
+        a       <http://data.ecommerce#Category> ;
+        <http://data.ecommerce#categoryName>
+                "TV & Camera" .
+
+<http://data.ecommerce/address/SN13%09Truax%098649%20Warner%20Hill,London,United%20Kingdom>
+        a       <http://data.ecommerce#Address> ;
+        <http://data.ecommerce#Address_address>
+                "SN13\tTruax\t8649 Warner Hill,London,United Kingdom" ;
+        <http://data.ecommerce#Customer_email>
+                <http://data.ecommerce/customer/Thedrick_Arrell> .
+
+<http://data.ecommerce/customer/Delly_Lapthorn>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Customer_email>
+                "dlapthorn6@phoca.cz" ;
+        <http://data.ecommerce#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://data.ecommerce#first_name>
+                "Delly" ;
+        <http://data.ecommerce#last_name>
+                "Lapthorn" ;
+        <http://data.ecommerce#places_order>
+                <http://data.ecommerce/order/b30f3919-7595> .
+
+<http://data.ecommerce/customer/Caralie_Elliot>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Customer_email>
+                "celliotb@columbia.edu" ;
+        <http://data.ecommerce#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://data.ecommerce#first_name>
+                "Caralie" ;
+        <http://data.ecommerce#last_name>
+                "Elliot" ;
+        <http://data.ecommerce#places_order>
+                <http://data.ecommerce/order/4abf8353-487f> .
+
+<http://data.ecommerce/customer/Jobina_Melby>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Customer_email>
+                "jmelbyd@wix.com" ;
+        <http://data.ecommerce#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://data.ecommerce#first_name>
+                "Jobina" ;
+        <http://data.ecommerce#last_name>
+                "Melby" .
+
+<http://data.ecommerce/address/07%20Trailsway%20Parkway,6834%09Dixon,Brussels,Belgium>
+        a       <http://data.ecommerce#Address> ;
+        <http://data.ecommerce#Address_address>
+                "07 Trailsway Parkway,6834\tDixon,Brussels,Belgium" ;
+        <http://data.ecommerce#Customer_email>
+                <http://data.ecommerce/customer/Alair_Novello> .
+
+<http://data.ecommerce/category/Books>
+        a       <http://data.ecommerce#Category> ;
+        <http://data.ecommerce#categoryName>
+                "Books" .
+
+<http://data.ecommerce/customer/Melodie_Dymick>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Customer_email>
+                "mdymickj@sourceforge.net" ;
+        <http://data.ecommerce#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://data.ecommerce#first_name>
+                "Melodie" ;
+        <http://data.ecommerce#last_name>
+                "Dymick" .
+
+<http://data.ecommerce/customer/Concordia_Gianolo>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Customer_email>
+                "cgianolof@surveymonkey.com" ;
+        <http://data.ecommerce#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://data.ecommerce#first_name>
+                "Concordia" ;
+        <http://data.ecommerce#last_name>
+                "Gianolo" .
+
+<http://data.ecommerce/customer/Jilly_Bidnall>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Customer_email>
+                "jbidnall7@shinystat.com" ;
+        <http://data.ecommerce#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://data.ecommerce#first_name>
+                "Jilly" ;
+        <http://data.ecommerce#last_name>
+                "Bidnall" ;
+        <http://data.ecommerce#places_order>
+                <http://data.ecommerce/order/0563a725-73da> .
+
+<http://data.ecommerce/order/949b0b3d-f6b9>
+        a                             <http://data.ecommerce#Order> ;
+        <http://data.ecommerce#date>  "2021-11-01 18:41:19.0"^^<java:java.sql.Timestamp> ;
+        <http://data.ecommerce#orderAmount>
+                "2000"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://data.ecommerce#receipt_id>
+                "949b0b3d-f6b9" .
+
+<http://data.ecommerce/address/19125%09Towne%0994810%20Anthes%20Junction,Philadelphia,United%20States>
+        a       <http://data.ecommerce#Address> ;
+        <http://data.ecommerce#Address_address>
+                "19125\tTowne\t94810 Anthes Junction,Philadelphia,United States" ;
+        <http://data.ecommerce#Customer_email>
+                <http://data.ecommerce/customer/Sibley_Faulds> .
+
+<http://data.ecommerce/customer/Jen_Domegan>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Customer_email>
+                "jdomegan9@opera.com" ;
+        <http://data.ecommerce#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://data.ecommerce#first_name>
+                "Jen" ;
+        <http://data.ecommerce#last_name>
+                "Domegan" ;
+        <http://data.ecommerce#places_order>
+                <http://data.ecommerce/order/7cf5ca33-0ec3> .
+
+<http://data.ecommerce/order/004e1dcf-7178>
+        a                             <http://data.ecommerce#Order> ;
+        <http://data.ecommerce#date>  "2021-11-01 18:41:19.0"^^<java:java.sql.Timestamp> ;
+        <http://data.ecommerce#orderAmount>
+                "2000"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://data.ecommerce#receipt_id>
+                "004e1dcf-7178" .
+
+<http://data.ecommerce/address/90398%09Green%20Ridge,%095036%20Esch%20Park,Inglewood,United%20States>
+        a       <http://data.ecommerce#Address> ;
+        <http://data.ecommerce#Address_address>
+                "90398\tGreen Ridge,\t5036 Esch Park,Inglewood,United States" ;
+        <http://data.ecommerce#Customer_email>
+                <http://data.ecommerce/customer/Jilly_Bidnall> .
+
+<http://data.ecommerce/address/6600%20Buhler%20Park,2170%20Sunfield,Antwerpen,Belgium>
+        a       <http://data.ecommerce#Address> ;
+        <http://data.ecommerce#Address_address>
+                "6600 Buhler Park,2170 Sunfield,Antwerpen,Belgium" ;
+        <http://data.ecommerce#Customer_email>
+                <http://data.ecommerce/customer/Avril_Wallentin> .
+
+<http://data.ecommerce/product/3a62141b-933c-440c-a5b7>
+        a                              <http://data.ecommerce#Product> ;
+        <http://data.ecommerce#Item_condition>
+                "New" ;
+        <http://data.ecommerce#Product_date_added>
+                "2021-10-09 16:53:01.428812"^^<java:java.sql.Timestamp> ;
+        <http://data.ecommerce#Product_description>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dictum purus. Vestibulum nisl risus, dapibus sit amet vestibulum dignissim, aliquet quis eros." ;
+        <http://data.ecommerce#Product_price>
+                "700"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://data.ecommerce#brand>  <http://data.ecommerce/brand/Apple> ;
+        <http://data.ecommerce#category>
+                <http://data.ecommerce/category/Mobiles> ;
+        <http://data.ecommerce#color>  "White" ;
+        <http://data.ecommerce#location>
+                "California" ;
+        <http://data.ecommerce#model>  "IPhone 10" ;
+        <http://data.ecommerce#sku>    "3a62141b-933c-440c-a5b7" ;
+        <http://data.ecommerce#stockQuantity>
+                "60"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://data.ecommerce/address/6%20Dorton%20Center,6042%20Holmberg,Charleroi,Belgium>
+        a       <http://data.ecommerce#Address> ;
+        <http://data.ecommerce#Address_address>
+                "6 Dorton Center,6042 Holmberg,Charleroi,Belgium" ;
+        <http://data.ecommerce#Customer_email>
+                <http://data.ecommerce/customer/Melodie_Dymick> .
+
+<http://data.ecommerce/address/1118%20Roxbury%20Junction,6042%20Lake%20View,Charleroi,Belgium>
+        a       <http://data.ecommerce#Address> ;
+        <http://data.ecommerce#Address_address>
+                "1118 Roxbury Junction,6042 Lake View,Charleroi,Belgium" ;
+        <http://data.ecommerce#Customer_email>
+                <http://data.ecommerce/customer/Aluino_Daud> .
+
+<http://data.ecommerce/address/456%20Drewry%20Center,2170%09Shelley,%20Antwerpen,%20Belgium%09>
+        a       <http://data.ecommerce#Address> ;
+        <http://data.ecommerce#Address_address>
+                "456 Drewry Center,2170\tShelley, Antwerpen, Belgium\t" ;
+        <http://data.ecommerce#Customer_email>
+                <http://data.ecommerce/customer/Brietta_Hoggan> .
+
+<http://data.ecommerce/category/Video%20games>
+        a       <http://data.ecommerce#Category> ;
+        <http://data.ecommerce#categoryName>
+                "Video games" .
+
+<http://data.ecommerce/order/7add4332-46b3>
+        a                             <http://data.ecommerce#Order> ;
+        <http://data.ecommerce#date>  "2021-11-01 18:41:19.0"^^<java:java.sql.Timestamp> ;
+        <http://data.ecommerce#orderAmount>
+                "2000"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://data.ecommerce#receipt_id>
+                "7add4332-46b3" .
+
+<http://data.ecommerce/address/58106%20Hallows%20Way,9404%09Memorial,Ninove,Belgium>
+        a       <http://data.ecommerce#Address> ;
+        <http://data.ecommerce#Address_address>
+                "58106 Hallows Way,9404\tMemorial,Ninove,Belgium" ;
+        <http://data.ecommerce#Customer_email>
+                <http://data.ecommerce/customer/Erena_Mar> .
+
+<http://data.ecommerce/order/0b7deade-5fee>
+        a                             <http://data.ecommerce#Order> ;
+        <http://data.ecommerce#date>  "2021-11-01 18:41:19.0"^^<java:java.sql.Timestamp> ;
+        <http://data.ecommerce#orderAmount>
+                "2000"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://data.ecommerce#receipt_id>
+                "0b7deade-5fee" .
+
+<http://data.ecommerce/product/21bca5f9-a789-48c9-82a0>
+        a                              <http://data.ecommerce#Product> ;
+        <http://data.ecommerce#Item_condition>
+                "New" ;
+        <http://data.ecommerce#Product_date_added>
+                "2021-06-14 18:41:19.0"^^<java:java.sql.Timestamp> ;
+        <http://data.ecommerce#Product_description>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dictum purus. Vestibulum nisl risus, dapibus sit amet vestibulum dignissim, aliquet quis eros." ;
+        <http://data.ecommerce#Product_price>
+                "1050"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://data.ecommerce#brand>  <http://data.ecommerce/brand/Samsung> ;
+        <http://data.ecommerce#category>
+                <http://data.ecommerce/category/Mobiles> ;
+        <http://data.ecommerce#color>  "Mystic Black" ;
+        <http://data.ecommerce#location>
+                "California" ;
+        <http://data.ecommerce#model>  "Samsung Galaxy Note 20 Ultra 5G" ;
+        <http://data.ecommerce#sku>    "21bca5f9-a789-48c9-82a0" ;
+        <http://data.ecommerce#stockQuantity>
+                "105"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://data.ecommerce/customer/Brietta_Hoggan>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Customer_email>
+                "bhoggan0@eepurl.com" ;
+        <http://data.ecommerce#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://data.ecommerce#first_name>
+                "Brietta" ;
+        <http://data.ecommerce#last_name>
+                "Hoggan" ;
+        <http://data.ecommerce#places_order>
+                <http://data.ecommerce/order/095da47b-c203> .
+
+<http://data.ecommerce/product/3aaaa278-1de4-480c-8baa>
+        a                              <http://data.ecommerce#Product> ;
+        <http://data.ecommerce#Item_condition>
+                "New" ;
+        <http://data.ecommerce#Product_date_added>
+                "2021-07-16 18:41:19.0"^^<java:java.sql.Timestamp> ;
+        <http://data.ecommerce#Product_description>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dictum purus. Vestibulum nisl risus, dapibus sit amet vestibulum dignissim, aliquet quis eros." ;
+        <http://data.ecommerce#Product_price>
+                "1500"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://data.ecommerce#brand>  <http://data.ecommerce/brand/Samsung> ;
+        <http://data.ecommerce#category>
+                <http://data.ecommerce/category/Mobiles> ;
+        <http://data.ecommerce#color>  "Phantom Black" ;
+        <http://data.ecommerce#location>
+                "London" ;
+        <http://data.ecommerce#model>  "Samsung Galaxy Z Fold3 5G" ;
+        <http://data.ecommerce#sku>    "3aaaa278-1de4-480c-8baa" ;
+        <http://data.ecommerce#stockQuantity>
+                "100"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://data.ecommerce/address/BT2%09Anniversary%091964%20Beilfuss%20Avenue,Belfast,United%20Kingdom>
+        a       <http://data.ecommerce#Address> ;
+        <http://data.ecommerce#Address_address>
+                "BT2\tAnniversary\t1964 Beilfuss Avenue,Belfast,United Kingdom" ;
+        <http://data.ecommerce#Customer_email>
+                <http://data.ecommerce/customer/Calypso_Bevans> .
+
+<http://data.ecommerce/address/66799%20Ridgeway%20Alley,70820%09Cascada,Baton%20Rouge,United%20States>
+        a       <http://data.ecommerce#Address> ;
+        <http://data.ecommerce#Address_address>
+                "66799 Ridgeway Alley,70820\tCascada,Baton Rouge,United States" ;
+        <http://data.ecommerce#Customer_email>
+                <http://data.ecommerce/customer/Averil_Bundy> .
+
+<http://data.ecommerce/address/39452%204th%20Trail,4102%09Buena%20Vista,Carlifonia,United%20States>
+        a       <http://data.ecommerce#Address> ;
+        <http://data.ecommerce#Address_address>
+                "39452 4th Trail,4102\tBuena Vista,Carlifonia,United States" ;
+        <http://data.ecommerce#Customer_email>
+                <http://data.ecommerce/customer/Tyler_MacGowan> .
+
+<http://data.ecommerce/customer/Thornton_Macvey>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Customer_email>
+                "tmacveye@dmoz.org" ;
+        <http://data.ecommerce#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://data.ecommerce#first_name>
+                "Thornton" ;
+        <http://data.ecommerce#last_name>
+                "Macvey" .
+
+<http://data.ecommerce/product/4a0bec5b-f0c8-4e0c-8182>
+        a                              <http://data.ecommerce#Product> ;
+        <http://data.ecommerce#Item_condition>
+                "New" ;
+        <http://data.ecommerce#Product_date_added>
+                "2021-10-09 16:52:14.541691"^^<java:java.sql.Timestamp> ;
+        <http://data.ecommerce#Product_description>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dictum purus. Vestibulum nisl risus, dapibus sit amet vestibulum dignissim, aliquet quis eros." ;
+        <http://data.ecommerce#Product_price>
+                "9150"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://data.ecommerce#brand>  <http://data.ecommerce/brand/Apple> ;
+        <http://data.ecommerce#category>
+                <http://data.ecommerce/category/Mobiles> ;
+        <http://data.ecommerce#color>  "Black" ;
+        <http://data.ecommerce#location>
+                "California" ;
+        <http://data.ecommerce#model>  "IPhone 10" ;
+        <http://data.ecommerce#sku>    "4a0bec5b-f0c8-4e0c-8182" ;
+        <http://data.ecommerce#stockQuantity>
+                "70"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://data.ecommerce/supplier/7946128330>
+        a                            <http://data.ecommerce#supplier> ;
+        <http://data.ecommerce#Supplier_advertises>
+                <http://data.ecommerce/product/fc07b915-5f56-4e50-8600> , <http://data.ecommerce/product/d695052e-d926-4d01-bb3b> , <http://data.ecommerce/product/ff5d9d07-56fa-4cfa-905a> , <http://data.ecommerce/product/161ef15e-5908-45fa-b3d3> ;
+        <http://data.ecommerce#Supplier_city>
+                "Brussels" ;
+        <http://data.ecommerce#Supplier_companyName>
+                "Asus Inc." ;
+        <http://data.ecommerce#Supplier_country>
+                "BEL" ;
+        <http://data.ecommerce#Supplier_email>
+                "business@asus.com" ;
+        <http://data.ecommerce#Supplier_ph>
+                "+329654892330" ;
+        <http://data.ecommerce#Supplier_postalCode>
+                "1500" ;
+        <http://data.ecommerce#Supplier_streetAddress>
+                "Boulevar General Jacques" ;
+        <http://data.ecommerce#Supplier_url>
+                "asus.be" ;
+        <http://data.ecommerce#bce>  "7946128330" ;
+        <http://data.ecommerce#supplier_addressLocality>
+                "Ixelles" .
+
+<http://data.ecommerce/customer/Eddi_Sealey>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Customer_email>
+                "esealey7@samsung.com" ;
+        <http://data.ecommerce#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://data.ecommerce#first_name>
+                "Eddi" ;
+        <http://data.ecommerce#last_name>
+                "Sealey" ;
+        <http://data.ecommerce#places_order>
+                <http://data.ecommerce/order/9b029c2f-0f52> .
+
+<http://data.ecommerce/customer/Dinny_Duckels>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Customer_email>
+                "dduckelsd@google.pl" ;
+        <http://data.ecommerce#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://data.ecommerce#first_name>
+                "Dinny" ;
+        <http://data.ecommerce#last_name>
+                "Duckels" .
+
+<http://data.ecommerce/order/7b87e34a-0191>
+        a                             <http://data.ecommerce#Order> ;
+        <http://data.ecommerce#date>  "2021-11-01 18:41:19.0"^^<java:java.sql.Timestamp> ;
+        <http://data.ecommerce#orderAmount>
+                "2000"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://data.ecommerce#receipt_id>
+                "7b87e34a-0191" .
+
+<http://data.ecommerce/customer/Thedrick_Arrell>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Customer_email>
+                "tarrell2@shareasale.com" ;
+        <http://data.ecommerce#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://data.ecommerce#first_name>
+                "Thedrick" ;
+        <http://data.ecommerce#last_name>
+                "Arrell" ;
+        <http://data.ecommerce#places_order>
+                <http://data.ecommerce/order/5ae48ea0-8dff> .
+
+<http://data.ecommerce/category/Health%20&%20Beauty>
+        a       <http://data.ecommerce#Category> ;
+        <http://data.ecommerce#categoryName>
+                "Health & Beauty" .
+
+<http://data.ecommerce/address/9732%20Manitowish%20Terrace,7536%09Oxford,Brussels,Belgium>
+        a       <http://data.ecommerce#Address> ;
+        <http://data.ecommerce#Address_address>
+                "9732 Manitowish Terrace,7536\tOxford,Brussels,Belgium" ;
+        <http://data.ecommerce#Customer_email>
+                <http://data.ecommerce/customer/Marcelline_Keene> .
+
+<http://data.ecommerce/address/80%20Brickson%20Park%20Alley,7604%20Katie,Brussels,BelgiumBelgium>
+        a       <http://data.ecommerce#Address> ;
+        <http://data.ecommerce#Address_address>
+                "80 Brickson Park Alley,7604 Katie,Brussels,BelgiumBelgium" ;
+        <http://data.ecommerce#Customer_email>
+                <http://data.ecommerce/customer/Huey_Pudge> .
+
+<http://data.ecommerce/address/85072%09Holy%20Cross%0996165%20Bashford%20Pass,Phoenix,United%20States>
+        a       <http://data.ecommerce#Address> ;
+        <http://data.ecommerce#Address_address>
+                "85072\tHoly Cross\t96165 Bashford Pass,Phoenix,United States" ;
+        <http://data.ecommerce#Customer_email>
+                <http://data.ecommerce/customer/Concordia_Gianolo> .
+
+<http://data.ecommerce/customer/Calypso_Bevans>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Customer_email>
+                "cbevansf@fda.gov" ;
+        <http://data.ecommerce#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://data.ecommerce#first_name>
+                "Calypso" ;
+        <http://data.ecommerce#last_name>
+                "Bevans" .
+
+<http://data.ecommerce/customer/Felita_Kemet>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Customer_email>
+                "fkemetg@ebay.co.uk" ;
+        <http://data.ecommerce#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://data.ecommerce#first_name>
+                "Felita" ;
+        <http://data.ecommerce#last_name>
+                "Kemet" .
+
+<http://data.ecommerce/product/4cd04183-a0da-4bf3-aedb>
+        a                              <http://data.ecommerce#Product> ;
+        <http://data.ecommerce#Item_condition>
+                "New" ;
+        <http://data.ecommerce#Product_date_added>
+                "2021-07-16 18:41:19.0"^^<java:java.sql.Timestamp> ;
+        <http://data.ecommerce#Product_description>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dictum purus. Vestibulum nisl risus, dapibus sit amet vestibulum dignissim, aliquet quis eros." ;
+        <http://data.ecommerce#Product_price>
+                "1500"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://data.ecommerce#brand>  <http://data.ecommerce/brand/Samsung> ;
+        <http://data.ecommerce#category>
+                <http://data.ecommerce/category/Mobiles> ;
+        <http://data.ecommerce#color>  "Phantom Black" ;
+        <http://data.ecommerce#location>
+                "California" ;
+        <http://data.ecommerce#model>  "Samsung Galaxy Z Fold3 5G" ;
+        <http://data.ecommerce#sku>    "4cd04183-a0da-4bf3-aedb" ;
+        <http://data.ecommerce#stockQuantity>
+                "180"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://data.ecommerce/customer/Margarette_Czapla>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Customer_email>
+                "mczaplaj@pinterest.com" ;
+        <http://data.ecommerce#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://data.ecommerce#first_name>
+                "Margarette" ;
+        <http://data.ecommerce#last_name>
+                "Czapla" .
+
+<http://data.ecommerce/customer/Wolf_Malzard>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Customer_email>
+                "wmalzard8@nps.gov" ;
+        <http://data.ecommerce#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://data.ecommerce#first_name>
+                "Wolf" ;
+        <http://data.ecommerce#last_name>
+                "Malzard" ;
+        <http://data.ecommerce#places_order>
+                <http://data.ecommerce/order/f1cb31a1-7912> .
+
+<http://data.ecommerce/customer/Karoline_Klehn>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Customer_email>
+                "kklehn3@liveinternet.ru" ;
+        <http://data.ecommerce#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://data.ecommerce#first_name>
+                "Karoline" ;
+        <http://data.ecommerce#last_name>
+                "Klehn" ;
+        <http://data.ecommerce#places_order>
+                <http://data.ecommerce/order/124d210e-a5d7> .
+
+<http://data.ecommerce/supplier/4946126393>
+        a                            <http://data.ecommerce#supplier> ;
+        <http://data.ecommerce#Supplier_city>
+                "California" ;
+        <http://data.ecommerce#Supplier_companyName>
+                "Apple Inc." ;
+        <http://data.ecommerce#Supplier_country>
+                "USA" ;
+        <http://data.ecommerce#Supplier_email>
+                "business@apple.com" ;
+        <http://data.ecommerce#Supplier_ph>
+                "+19654892330" ;
+        <http://data.ecommerce#Supplier_postalCode>
+                "8007" ;
+        <http://data.ecommerce#Supplier_streetAddress>
+                "Twin Pines Circle" ;
+        <http://data.ecommerce#Supplier_url>
+                "apple.com" ;
+        <http://data.ecommerce#bce>  "4946126393" ;
+        <http://data.ecommerce#supplier_addressLocality>
+                "Silicon valley" .
+
+<http://data.ecommerce/product/076e2af4-37b2-4ec0-8c2e>
+        a                              <http://data.ecommerce#Product> ;
+        <http://data.ecommerce#Item_condition>
+                "New" ;
+        <http://data.ecommerce#Product_date_added>
+                "2021-07-16 18:41:19.0"^^<java:java.sql.Timestamp> ;
+        <http://data.ecommerce#Product_description>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dictum purus. Vestibulum nisl risus, dapibus sit amet vestibulum dignissim, aliquet quis eros." ;
+        <http://data.ecommerce#Product_price>
+                "1500"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://data.ecommerce#brand>  <http://data.ecommerce/brand/Samsung> ;
+        <http://data.ecommerce#category>
+                <http://data.ecommerce/category/Mobiles> ;
+        <http://data.ecommerce#color>  "Phantom Black" ;
+        <http://data.ecommerce#location>
+                "Brussels" ;
+        <http://data.ecommerce#model>  "Samsung Galaxy Z Fold3 5G" ;
+        <http://data.ecommerce#sku>    "076e2af4-37b2-4ec0-8c2e" ;
+        <http://data.ecommerce#stockQuantity>
+                "115"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://data.ecommerce/order/5ae48ea0-8dff>
+        a                             <http://data.ecommerce#Order> ;
+        <http://data.ecommerce#date>  "2021-11-01 18:41:19.0"^^<java:java.sql.Timestamp> ;
+        <http://data.ecommerce#orderAmount>
+                "2000"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://data.ecommerce#receipt_id>
+                "5ae48ea0-8dff" .
+
+<http://data.ecommerce/customer/Rosemarie_Sahlstrom>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Customer_email>
+                "rsahlstrom5@bigcartel.com" ;
+        <http://data.ecommerce#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://data.ecommerce#first_name>
+                "Rosemarie" ;
+        <http://data.ecommerce#last_name>
+                "Sahlstrom" ;
+        <http://data.ecommerce#places_order>
+                <http://data.ecommerce/order/004e1dcf-7178> .
+
+<http://data.ecommerce/address/0%20Hermina%20Street,9052%20Eggendart,Gent,BelgiumBelgium>
+        a       <http://data.ecommerce#Address> ;
+        <http://data.ecommerce#Address_address>
+                "0 Hermina Street,9052 Eggendart,Gent,BelgiumBelgium" ;
+        <http://data.ecommerce#Customer_email>
+                <http://data.ecommerce/customer/Oberon_Stockford> .
+
+<http://data.ecommerce/order/7cf5ca33-0ec3>
+        a                             <http://data.ecommerce#Order> ;
+        <http://data.ecommerce#date>  "2021-11-01 18:41:19.0"^^<java:java.sql.Timestamp> ;
+        <http://data.ecommerce#orderAmount>
+                "2000"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://data.ecommerce#receipt_id>
+                "7cf5ca33-0ec3" .
+
+<http://data.ecommerce/address/6%20Sunnyside%20Court,7032%09Loftsgordon,Mons,Belgium>
+        a       <http://data.ecommerce#Address> ;
+        <http://data.ecommerce#Address_address>
+                "6 Sunnyside Court,7032\tLoftsgordon,Mons,Belgium" ;
+        <http://data.ecommerce#Customer_email>
+                <http://data.ecommerce/customer/Sula_Sotworth> .
+
+<http://data.ecommerce/customer/Brook_Fallows>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Customer_email>
+                "bfallowsa@nytimes.com" ;
+        <http://data.ecommerce#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://data.ecommerce#first_name>
+                "Brook" ;
+        <http://data.ecommerce#last_name>
+                "Fallows" .
+
+<http://data.ecommerce/address/88541%20Troy%20,%20132%20Banding%20Terrace,El%20Paso,United%20States>
+        a       <http://data.ecommerce#Address> ;
+        <http://data.ecommerce#Address_address>
+                "88541 Troy , 132 Banding Terrace,El Paso,United States" ;
+        <http://data.ecommerce#Customer_email>
+                <http://data.ecommerce/customer/Paul_Enoch> .
+
+<http://data.ecommerce/customer/Annette_Rosterne>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Customer_email>
+                "arosterne2@usa.gov" ;
+        <http://data.ecommerce#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://data.ecommerce#first_name>
+                "Annette" ;
+        <http://data.ecommerce#last_name>
+                "Rosterne" ;
+        <http://data.ecommerce#places_order>
+                <http://data.ecommerce/order/6bdf82b2-7e6d> .
+
+<http://data.ecommerce/order/095da47b-c203>
+        a                             <http://data.ecommerce#Order> ;
+        <http://data.ecommerce#date>  "2021-11-01 18:41:19.0"^^<java:java.sql.Timestamp> ;
+        <http://data.ecommerce#orderAmount>
+                "2000"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://data.ecommerce#receipt_id>
+                "095da47b-c203" .
+
+<http://data.ecommerce/customer/Aggy_Purkins>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Customer_email>
+                "apurkinsh@epa.gov" ;
+        <http://data.ecommerce#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://data.ecommerce#first_name>
+                "Aggy" ;
+        <http://data.ecommerce#last_name>
+                "Purkins" .
+
+<http://data.ecommerce/order/3cc735c1-74d4>
+        a                             <http://data.ecommerce#Order> ;
+        <http://data.ecommerce#date>  "2021-11-01 18:41:19.0"^^<java:java.sql.Timestamp> ;
+        <http://data.ecommerce#orderAmount>
+                "2000"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://data.ecommerce#receipt_id>
+                "3cc735c1-74d4" .
+
+<http://data.ecommerce/address/BD23%09Hudson%0998%20Anzinger%20Place,London,United%20Kingdom>
+        a       <http://data.ecommerce#Address> ;
+        <http://data.ecommerce#Address_address>
+                "BD23\tHudson\t98 Anzinger Place,London,United Kingdom" ;
+        <http://data.ecommerce#Customer_email>
+                <http://data.ecommerce/customer/Eddi_Sealey> .
+
+<http://data.ecommerce/product/ff5d9d07-56fa-4cfa-905a>
+        a                              <http://data.ecommerce#Product> ;
+        <http://data.ecommerce#Item_condition>
+                "New" ;
+        <http://data.ecommerce#Product_date_added>
+                "2021-07-16 18:41:19.0"^^<java:java.sql.Timestamp> ;
+        <http://data.ecommerce#Product_description>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dictum purus. Vestibulum nisl risus, dapibus sit amet vestibulum dignissim, aliquet quis eros." ;
+        <http://data.ecommerce#Product_price>
+                "700"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://data.ecommerce#brand>  <http://data.ecommerce/brand/Asus> ;
+        <http://data.ecommerce#category>
+                <http://data.ecommerce/category/Computers> ;
+        <http://data.ecommerce#color>  "Eclipse Gray" ;
+        <http://data.ecommerce#location>
+                "Ghent" ;
+        <http://data.ecommerce#model>  "ROG Strix G17 (2021)" ;
+        <http://data.ecommerce#sku>    "ff5d9d07-56fa-4cfa-905a" ;
+        <http://data.ecommerce#stockQuantity>
+                "65"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://data.ecommerce/customer/Sibley_Faulds>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Customer_email>
+                "sfauldsd@unicef.org" ;
+        <http://data.ecommerce#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://data.ecommerce#first_name>
+                "Sibley" ;
+        <http://data.ecommerce#last_name>
+                "Faulds" .
+
+<http://data.ecommerce/order/42f3c02a-ec14>
+        a                             <http://data.ecommerce#Order> ;
+        <http://data.ecommerce#date>  "2021-11-01 18:41:19.0"^^<java:java.sql.Timestamp> ;
+        <http://data.ecommerce#orderAmount>
+                "2000"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://data.ecommerce#receipt_id>
+                "42f3c02a-ec14" .
+
+<http://data.ecommerce/customer/Conn_Apfler>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Customer_email>
+                "capflerh@multiply.com" ;
+        <http://data.ecommerce#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://data.ecommerce#first_name>
+                "Conn" ;
+        <http://data.ecommerce#last_name>
+                "Apfler" .
+
+<http://data.ecommerce/customer/Jaine_Bowlas>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Customer_email>
+                "jbowlas1@sciencedirect.com" ;
+        <http://data.ecommerce#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://data.ecommerce#first_name>
+                "Jaine" ;
+        <http://data.ecommerce#last_name>
+                "Bowlas" ;
+        <http://data.ecommerce#places_order>
+                <http://data.ecommerce/order/d4f8f116-d586> .
+
+<http://data.ecommerce/customer/Minor_Scantleberry>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Customer_email>
+                "mscantleberryi@google.de" ;
+        <http://data.ecommerce#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://data.ecommerce#first_name>
+                "Minor" ;
+        <http://data.ecommerce#last_name>
+                "Scantleberry" .
+
+<http://data.ecommerce/product/b362f9f0-1f0d-4b2e-8e1d>
+        a                              <http://data.ecommerce#Product> ;
+        <http://data.ecommerce#Item_condition>
+                "New" ;
+        <http://data.ecommerce#Product_date_added>
+                "2021-09-04 13:51:12.0"^^<java:java.sql.Timestamp> ;
+        <http://data.ecommerce#Product_description>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dictum purus. Vestibulum nisl risus, dapibus sit amet vestibulum dignissim, aliquet quis eros." ;
+        <http://data.ecommerce#Product_price>
+                "1100"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://data.ecommerce#brand>  <http://data.ecommerce/brand/Apple> ;
+        <http://data.ecommerce#category>
+                <http://data.ecommerce/category/Mobiles> ;
+        <http://data.ecommerce#color>  "Black" ;
+        <http://data.ecommerce#location>
+                "Brussels" ;
+        <http://data.ecommerce#model>  "IPhone 11" ;
+        <http://data.ecommerce#sku>    "b362f9f0-1f0d-4b2e-8e1d" ;
+        <http://data.ecommerce#stockQuantity>
+                "94"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://data.ecommerce/order/05ab0cd0-ab45>
+        a                             <http://data.ecommerce#Order> ;
+        <http://data.ecommerce#date>  "2021-11-01 18:41:19.0"^^<java:java.sql.Timestamp> ;
+        <http://data.ecommerce#orderAmount>
+                "2000"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://data.ecommerce#receipt_id>
+                "05ab0cd0-ab45" .
+
+<http://data.ecommerce/customer/Aluino_Daud>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Customer_email>
+                "adaud9@biglobe.ne.jp" ;
+        <http://data.ecommerce#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://data.ecommerce#first_name>
+                "Aluino" ;
+        <http://data.ecommerce#last_name>
+                "Daud" ;
+        <http://data.ecommerce#places_order>
+                <http://data.ecommerce/order/489510f4-a7e3> .
+
+<http://data.ecommerce/customer/Sula_Sotworth>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Customer_email>
+                "ssotworth5@businessweek.com" ;
+        <http://data.ecommerce#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://data.ecommerce#first_name>
+                "Sula" ;
+        <http://data.ecommerce#last_name>
+                "Sotworth" .
+
+<http://data.ecommerce/customer/Alair_Novello>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Customer_email>
+                "anovelloh@blogtalkradio.com" ;
+        <http://data.ecommerce#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://data.ecommerce#first_name>
+                "Alair" ;
+        <http://data.ecommerce#last_name>
+                "Novello" .
+
+<http://data.ecommerce/customer/Gweneth_Libbis>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Customer_email>
+                "glibbis5@ycombinator.com" ;
+        <http://data.ecommerce#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://data.ecommerce#first_name>
+                "Gweneth" ;
+        <http://data.ecommerce#last_name>
+                "Libbis" ;
+        <http://data.ecommerce#places_order>
+                <http://data.ecommerce/order/7b87e34a-0191> .
+
+<http://data.ecommerce/address/AB56%09Eagle%20Crest%094%20Dottie%20Way,Milton,United%20Kingdom>
+        a       <http://data.ecommerce#Address> ;
+        <http://data.ecommerce#Address_address>
+                "AB56\tEagle Crest\t4 Dottie Way,Milton,United Kingdom" ;
+        <http://data.ecommerce#Customer_email>
+                <http://data.ecommerce/customer/Bartram_Bridden> .
+
+<http://data.ecommerce/address/456%20Drewry%20Center,%202170%20Shelley,%20Antwerpen,%20Belgium>
+        a       <http://data.ecommerce#Address> ;
+        <http://data.ecommerce#Address_address>
+                "456 Drewry Center, 2170 Shelley, Antwerpen, Belgium" ;
+        <http://data.ecommerce#Customer_email>
+                <http://data.ecommerce/customer/Brietta_Hoggan> .
+
+<http://data.ecommerce/address/07195%09Sunbrook,%20856%20Tennessee%20Street,Carlifonia,United%20States>
+        a       <http://data.ecommerce#Address> ;
+        <http://data.ecommerce#Address_address>
+                "07195\tSunbrook, 856 Tennessee Street,Carlifonia,United States" ;
+        <http://data.ecommerce#Customer_email>
+                <http://data.ecommerce/customer/Brook_Fallows> .
+
+<http://data.ecommerce/customer/Adriane_Sire>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Customer_email>
+                "asireb@wikispaces.com" ;
+        <http://data.ecommerce#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://data.ecommerce#first_name>
+                "Adriane" ;
+        <http://data.ecommerce#last_name>
+                "Sire" .
+
+<http://data.ecommerce/order/0563a725-73da>
+        a                             <http://data.ecommerce#Order> ;
+        <http://data.ecommerce#date>  "2021-11-01 18:41:19.0"^^<java:java.sql.Timestamp> ;
+        <http://data.ecommerce#orderAmount>
+                "2000"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://data.ecommerce#receipt_id>
+                "0563a725-73da" .
+
+<http://data.ecommerce/address/77281%09Anniversary%0928%20Columbus%20Point,Houston,United%20States>
+        a       <http://data.ecommerce#Address> ;
+        <http://data.ecommerce#Address_address>
+                "77281\tAnniversary\t28 Columbus Point,Houston,United States" ;
+        <http://data.ecommerce#Customer_email>
+                <http://data.ecommerce/customer/Wallis_Boule> .
+
+<http://data.ecommerce/customer/Oberon_Stockford>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Customer_email>
+                "ostockford7@liveinternet.ru" ;
+        <http://data.ecommerce#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://data.ecommerce#first_name>
+                "Oberon" ;
+        <http://data.ecommerce#last_name>
+                "Stockford" ;
+        <http://data.ecommerce#places_order>
+                <http://data.ecommerce/order/7add4332-46b3> .
+
+<http://data.ecommerce/delivery_status/notDelivered>
+        a       <http://data.ecommerce#Not_Delivered> ;
+        <http://data.ecommerce#description>
+                "lorem ipsum si dolor" .
+
+<http://data.ecommerce/address/63180%09Oak%0989173%20Hudson%20Circle,Carlifonia,United%20States>
+        a       <http://data.ecommerce#Address> ;
+        <http://data.ecommerce#Address_address>
+                "63180\tOak\t89173 Hudson Circle,Carlifonia,United States" ;
+        <http://data.ecommerce#Customer_email>
+                <http://data.ecommerce/customer/Conn_Apfler> .
+
+<http://data.ecommerce/order/a2b72693-6dd6>
+        a                             <http://data.ecommerce#Order> ;
+        <http://data.ecommerce#date>  "2021-11-01 18:41:19.0"^^<java:java.sql.Timestamp> ;
+        <http://data.ecommerce#orderAmount>
+                "2000"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://data.ecommerce#receipt_id>
+                "a2b72693-6dd6" .
+
+<http://data.ecommerce/order/9b029c2f-0f52>
+        a                             <http://data.ecommerce#Order> ;
+        <http://data.ecommerce#date>  "2021-11-01 18:41:19.0"^^<java:java.sql.Timestamp> ;
+        <http://data.ecommerce#orderAmount>
+                "2000"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://data.ecommerce#receipt_id>
+                "9b029c2f-0f52" .
+
+<http://data.ecommerce/customer/Gonzales_Landy>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Customer_email>
+                "glandy4@google.co.uk" ;
+        <http://data.ecommerce#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://data.ecommerce#first_name>
+                "Gonzales" ;
+        <http://data.ecommerce#last_name>
+                "Landy" ;
+        <http://data.ecommerce#places_order>
+                <http://data.ecommerce/order/81dfc1d4-5078> .
+
+<http://data.ecommerce/product/3b08e48f-9be1-454b-8374>
+        a                              <http://data.ecommerce#Product> ;
+        <http://data.ecommerce#Item_condition>
+                "New" ;
+        <http://data.ecommerce#Product_date_added>
+                "2021-10-09 17:08:07.870954"^^<java:java.sql.Timestamp> ;
+        <http://data.ecommerce#Product_description>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dictum purus. Vestibulum nisl risus, dapibus sit amet vestibulum dignissim, aliquet quis eros." ;
+        <http://data.ecommerce#Product_price>
+                "400"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://data.ecommerce#brand>  <http://data.ecommerce/brand/Apple> ;
+        <http://data.ecommerce#category>
+                <http://data.ecommerce/category/Mobiles> ;
+        <http://data.ecommerce#color>  "White" ;
+        <http://data.ecommerce#location>
+                "California" ;
+        <http://data.ecommerce#model>  "MWP22HN/A" ;
+        <http://data.ecommerce#sku>    "3b08e48f-9be1-454b-8374" ;
+        <http://data.ecommerce#stockQuantity>
+                "85"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://data.ecommerce/customer/Hazlett_Jeannard>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Customer_email>
+                "hjeannard4@yellowpages.com" ;
+        <http://data.ecommerce#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://data.ecommerce#first_name>
+                "Hazlett" ;
+        <http://data.ecommerce#last_name>
+                "Jeannard" ;
+        <http://data.ecommerce#places_order>
+                <http://data.ecommerce/order/42f3c02a-ec14> .
+
+<http://data.ecommerce/customer/Marcelline_Keene>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Customer_email>
+                "mkeeneg@csmonitor.com" ;
+        <http://data.ecommerce#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://data.ecommerce#first_name>
+                "Marcelline" ;
+        <http://data.ecommerce#last_name>
+                "Keene" .
+
+<http://data.ecommerce/brand/Samsung>
+        a       <http://data.ecommerce#Brand> ;
+        <http://data.ecommerce#brandName>
+                "Samsung" .
+
+<http://data.ecommerce/order/b0bf1fcf-295d>
+        a                             <http://data.ecommerce#Order> ;
+        <http://data.ecommerce#date>  "2021-11-01 18:41:19.0"^^<java:java.sql.Timestamp> ;
+        <http://data.ecommerce#orderAmount>
+                "2000"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://data.ecommerce#receipt_id>
+                "b0bf1fcf-295d" .
+
+<http://data.ecommerce/order/5ab6e3ca-f9c3>
+        a                             <http://data.ecommerce#Order> ;
+        <http://data.ecommerce#date>  "2021-11-01 18:41:19.0"^^<java:java.sql.Timestamp> ;
+        <http://data.ecommerce#orderAmount>
+                "2000"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://data.ecommerce#receipt_id>
+                "5ab6e3ca-f9c3" .
+
+<http://data.ecommerce/order/1f126c2d-7852>
+        a                             <http://data.ecommerce#Order> ;
+        <http://data.ecommerce#date>  "2021-11-01 18:41:19.0"^^<java:java.sql.Timestamp> ;
+        <http://data.ecommerce#orderAmount>
+                "2000"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://data.ecommerce#receipt_id>
+                "1f126c2d-7852" .
+
+<http://data.ecommerce/customer/Bartram_Bridden>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Customer_email>
+                "bbriddenj@jiathis.com" ;
+        <http://data.ecommerce#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://data.ecommerce#first_name>
+                "Bartram" ;
+        <http://data.ecommerce#last_name>
+                "Bridden" .
+
+<http://data.ecommerce/address/SN1%09Derek%096%20Vernon%20Pass,London,United%20Kingdom>
+        a       <http://data.ecommerce#Address> ;
+        <http://data.ecommerce#Address_address>
+                "SN1\tDerek\t6 Vernon Pass,London,United Kingdom" ;
+        <http://data.ecommerce#Customer_email>
+                <http://data.ecommerce/customer/Cooper_Bradbeer> .
+
+<http://data.ecommerce/address/45228%09Pankratz%09082%20Golf%20Drive,Cincinnati,United%20States>
+        a       <http://data.ecommerce#Address> ;
+        <http://data.ecommerce#Address_address>
+                "45228\tPankratz\t082 Golf Drive,Cincinnati,United States" ;
+        <http://data.ecommerce#Customer_email>
+                <http://data.ecommerce/customer/Sally_Bendan> .
+
+<http://data.ecommerce/address/55564%20Judy,%208335%20Duke%20Avenue,Carlifonia,United%20States>
+        a       <http://data.ecommerce#Address> ;
+        <http://data.ecommerce#Address_address>
+                "55564 Judy, 8335 Duke Avenue,Carlifonia,United States" ;
+        <http://data.ecommerce#Customer_email>
+                <http://data.ecommerce/customer/Rosemarie_Sahlstrom> .
+
+<http://data.ecommerce/address/34282%09Havey%097%20Corry%20Circle,Carlifonia,United%20States>
+        a       <http://data.ecommerce#Address> ;
+        <http://data.ecommerce#Address_address>
+                "34282\tHavey\t7 Corry Circle,Carlifonia,United States" ;
+        <http://data.ecommerce#Customer_email>
+                <http://data.ecommerce/customer/Margarette_Czapla> .
+
+<http://data.ecommerce/brand/Asus>
+        a       <http://data.ecommerce#Brand> ;
+        <http://data.ecommerce#brandName>
+                "Asus" .
+
+<http://data.ecommerce/category/Men's%20Fashion>
+        a       <http://data.ecommerce#Category> ;
+        <http://data.ecommerce#Category_description>
+                "clothes, watches, shoes, hats..." ;
+        <http://data.ecommerce#categoryName>
+                "Men's Fashion" .
+
+<http://data.ecommerce/address/LN6%09Porter%0937%20Logan%20Junction,London,United%20Kingdom>
+        a       <http://data.ecommerce#Address> ;
+        <http://data.ecommerce#Address_address>
+                "LN6\tPorter\t37 Logan Junction,London,United Kingdom" ;
+        <http://data.ecommerce#Customer_email>
+                <http://data.ecommerce/customer/Jaine_Bowlas> .
+
+<http://data.ecommerce/address/933%20Bluestem%20Avenue,9404%20Northport,Ninove,Belgium>
+        a       <http://data.ecommerce#Address> ;
+        <http://data.ecommerce#Address_address>
+                "933 Bluestem Avenue,9404 Northport,Ninove,Belgium" ;
+        <http://data.ecommerce#Customer_email>
+                <http://data.ecommerce/customer/Yardley_Doswell> .
+
+<http://data.ecommerce/order/eb258842-6691>
+        a                             <http://data.ecommerce#Order> ;
+        <http://data.ecommerce#date>  "2021-11-01 18:41:19.0"^^<java:java.sql.Timestamp> ;
+        <http://data.ecommerce#orderAmount>
+                "2000"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://data.ecommerce#receipt_id>
+                "eb258842-6691" .
+
+<http://data.ecommerce/customer/Averil_Bundy>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Customer_email>
+                "abundy0@patch.com" ;
+        <http://data.ecommerce#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://data.ecommerce#first_name>
+                "Averil" ;
+        <http://data.ecommerce#last_name>
+                "Bundy" ;
+        <http://data.ecommerce#places_order>
+                <http://data.ecommerce/order/1f126c2d-7852> .
+
+<http://data.ecommerce/category/Appliances%20&%20Electronics>
+        a       <http://data.ecommerce#Category> ;
+        <http://data.ecommerce#categoryName>
+                "Appliances & Electronics" .
+
+<http://data.ecommerce/customer/Joye_Vigar>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Customer_email>
+                "jvigare@printfriendly.com" ;
+        <http://data.ecommerce#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://data.ecommerce#first_name>
+                "Joye" ;
+        <http://data.ecommerce#last_name>
+                "Vigar" .
+
+<http://data.ecommerce/order/489510f4-a7e3>
+        a                             <http://data.ecommerce#Order> ;
+        <http://data.ecommerce#date>  "2021-11-01 18:41:19.0"^^<java:java.sql.Timestamp> ;
+        <http://data.ecommerce#orderAmount>
+                "2000"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://data.ecommerce#receipt_id>
+                "489510f4-a7e3" .
+
+<http://data.ecommerce/address/39014%20Magdeline%20Lane,,United%20Kingdom>
+        a       <http://data.ecommerce#Address> ;
+        <http://data.ecommerce#Address_address>
+                "39014 Magdeline Lane,,United Kingdom" ;
+        <http://data.ecommerce#Customer_email>
+                <http://data.ecommerce/customer/Minor_Scantleberry> .
+
+<http://data.ecommerce/address/GL54%09Oneill%091817%20Eagan%20Center,London,United%20Kingdom>
+        a       <http://data.ecommerce#Address> ;
+        <http://data.ecommerce#Address_address>
+                "GL54\tOneill\t1817 Eagan Center,London,United Kingdom" ;
+        <http://data.ecommerce#Customer_email>
+                <http://data.ecommerce/customer/Myrlene_Alderwick> .
+
+<http://data.ecommerce/product/cf490540-e13b-4588-86b2>
+        a                              <http://data.ecommerce#Product> ;
+        <http://data.ecommerce#Item_condition>
+                "New" ;
+        <http://data.ecommerce#Product_date_added>
+                "2021-06-14 18:41:19.0"^^<java:java.sql.Timestamp> ;
+        <http://data.ecommerce#Product_description>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dictum purus. Vestibulum nisl risus, dapibus sit amet vestibulum dignissim, aliquet quis eros." ;
+        <http://data.ecommerce#Product_price>
+                "300"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://data.ecommerce#brand>  <http://data.ecommerce/brand/Redmi> ;
+        <http://data.ecommerce#category>
+                <http://data.ecommerce/category/Mobiles> ;
+        <http://data.ecommerce#color>  "Vintage Bronze" ;
+        <http://data.ecommerce#location>
+                "Ghent" ;
+        <http://data.ecommerce#model>  "Redmi Note 10 Pro" ;
+        <http://data.ecommerce#sku>    "cf490540-e13b-4588-86b2" ;
+        <http://data.ecommerce#stockQuantity>
+                "100"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://data.ecommerce/product/71b399d0-8f8b-42eb-9b47>
+        a                              <http://data.ecommerce#Product> ;
+        <http://data.ecommerce#Item_condition>
+                "New" ;
+        <http://data.ecommerce#Product_date_added>
+                "2021-10-09 16:51:12.976426"^^<java:java.sql.Timestamp> ;
+        <http://data.ecommerce#Product_description>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dictum purus. Vestibulum nisl risus, dapibus sit amet vestibulum dignissim, aliquet quis eros." ;
+        <http://data.ecommerce#Product_price>
+                "1100"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://data.ecommerce#brand>  <http://data.ecommerce/brand/Apple> ;
+        <http://data.ecommerce#category>
+                <http://data.ecommerce/category/Mobiles> ;
+        <http://data.ecommerce#color>  "Black" ;
+        <http://data.ecommerce#location>
+                "California" ;
+        <http://data.ecommerce#model>  "IPhone 11" ;
+        <http://data.ecommerce#sku>    "71b399d0-8f8b-42eb-9b47" ;
+        <http://data.ecommerce#stockQuantity>
+                "120"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://data.ecommerce/order/124d210e-a5d7>
+        a                             <http://data.ecommerce#Order> ;
+        <http://data.ecommerce#date>  "2021-11-01 18:41:19.0"^^<java:java.sql.Timestamp> ;
+        <http://data.ecommerce#orderAmount>
+                "2000"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://data.ecommerce#receipt_id>
+                "124d210e-a5d7" .
+
+<http://data.ecommerce/address/85%20Macpherson%20Way,6834%09Service,%20Brussels,Belgium>
+        a       <http://data.ecommerce#Address> ;
+        <http://data.ecommerce#Address_address>
+                "85 Macpherson Way,6834\tService, Brussels,Belgium" ;
+        <http://data.ecommerce#Customer_email>
+                <http://data.ecommerce/customer/Liesa_Perkins> .
+
+<http://data.ecommerce/order/3e176920-b166>
+        a                             <http://data.ecommerce#Order> ;
+        <http://data.ecommerce#date>  "2021-11-01 18:41:19.0"^^<java:java.sql.Timestamp> ;
+        <http://data.ecommerce#orderAmount>
+                "2000"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://data.ecommerce#receipt_id>
+                "3e176920-b166" .
+
+<http://data.ecommerce/product/9fecf700-ddb6-4740-8e8f>
+        a                              <http://data.ecommerce#Product> ;
+        <http://data.ecommerce#Item_condition>
+                "New" ;
+        <http://data.ecommerce#Product_date_added>
+                "2021-06-14 18:41:19.0"^^<java:java.sql.Timestamp> ;
+        <http://data.ecommerce#Product_description>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dictum purus. Vestibulum nisl risus, dapibus sit amet vestibulum dignissim, aliquet quis eros." ;
+        <http://data.ecommerce#Product_price>
+                "1050"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://data.ecommerce#brand>  <http://data.ecommerce/brand/Samsung> ;
+        <http://data.ecommerce#category>
+                <http://data.ecommerce/category/Mobiles> ;
+        <http://data.ecommerce#color>  "Mystic Black" ;
+        <http://data.ecommerce#location>
+                "Ghent" ;
+        <http://data.ecommerce#model>  "Samsung Galaxy Note 20 Ultra 5G" ;
+        <http://data.ecommerce#sku>    "9fecf700-ddb6-4740-8e8f" ;
+        <http://data.ecommerce#stockQuantity>
+                "105"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://data.ecommerce/product/b1700344-d908-45e2-9bc4>
+        a                              <http://data.ecommerce#Product> ;
+        <http://data.ecommerce#Item_condition>
+                "New" ;
+        <http://data.ecommerce#Product_date_added>
+                "2021-06-14 18:41:19.0"^^<java:java.sql.Timestamp> ;
+        <http://data.ecommerce#Product_description>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dictum purus. Vestibulum nisl risus, dapibus sit amet vestibulum dignissim, aliquet quis eros." ;
+        <http://data.ecommerce#Product_price>
+                "300"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://data.ecommerce#brand>  <http://data.ecommerce/brand/Redmi> ;
+        <http://data.ecommerce#category>
+                <http://data.ecommerce/category/Mobiles> ;
+        <http://data.ecommerce#color>  "Vintage Bronze" ;
+        <http://data.ecommerce#location>
+                "Brussels" ;
+        <http://data.ecommerce#model>  "Redmi Note 10 Pro" ;
+        <http://data.ecommerce#sku>    "b1700344-d908-45e2-9bc4" ;
+        <http://data.ecommerce#stockQuantity>
+                "100"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://data.ecommerce/address/10469%09Springview,%200820%20Moose%20Junction,,United%20States>
+        a       <http://data.ecommerce#Address> ;
+        <http://data.ecommerce#Address_address>
+                "10469\tSpringview, 0820 Moose Junction,,United States" ;
+        <http://data.ecommerce#Customer_email>
+                <http://data.ecommerce/customer/Jen_Domegan> .
+
+<http://data.ecommerce/delivery_kind/Premium>
+        a                              <http://data.ecommerce#Perimum> ;
+        <http://data.ecommerce#delivery_duration>
+                "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://data.ecommerce#price>  "13.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://data.ecommerce/customer/Erena_Mar>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Customer_email>
+                "emarf@desdev.cn" ;
+        <http://data.ecommerce#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://data.ecommerce#first_name>
+                "Erena" ;
+        <http://data.ecommerce#last_name>
+                "Mar" .
+
+<http://data.ecommerce/product/2c5311ac-aea1-443e-b15e>
+        a                              <http://data.ecommerce#Product> ;
+        <http://data.ecommerce#Item_condition>
+                "New" ;
+        <http://data.ecommerce#Product_date_added>
+                "2021-09-19 16:51:12.0"^^<java:java.sql.Timestamp> ;
+        <http://data.ecommerce#Product_description>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dictum purus. Vestibulum nisl risus, dapibus sit amet vestibulum dignissim, aliquet quis eros." ;
+        <http://data.ecommerce#Product_price>
+                "450"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://data.ecommerce#brand>  <http://data.ecommerce/brand/Apple> ;
+        <http://data.ecommerce#category>
+                <http://data.ecommerce/category/Mobiles> ;
+        <http://data.ecommerce#color>  "White" ;
+        <http://data.ecommerce#location>
+                "Brussels" ;
+        <http://data.ecommerce#model>  "IPhone 11" ;
+        <http://data.ecommerce#sku>    "2c5311ac-aea1-443e-b15e" ;
+        <http://data.ecommerce#stockQuantity>
+                "85"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://data.ecommerce/address/L74%093rd%090%20Susan%20Hill,Liverpool,United%20Kingdom>
+        a       <http://data.ecommerce#Address> ;
+        <http://data.ecommerce#Address_address>
+                "L74\t3rd\t0 Susan Hill,Liverpool,United Kingdom" ;
+        <http://data.ecommerce#Customer_email>
+                <http://data.ecommerce/customer/Roz_Thurley> .
+
+<http://data.ecommerce/address/AB55%09Chinook%09318%205th%20Drive,London,United%20Kingdom>
+        a       <http://data.ecommerce#Address> ;
+        <http://data.ecommerce#Address_address>
+                "AB55\tChinook\t318 5th Drive,London,United Kingdom" ;
+        <http://data.ecommerce#Customer_email>
+                <http://data.ecommerce/customer/Aggy_Purkins> .
+
+<http://data.ecommerce/order/df13c18d-6e93>
+        a                             <http://data.ecommerce#Order> ;
+        <http://data.ecommerce#date>  "2021-11-01 18:41:19.0"^^<java:java.sql.Timestamp> ;
+        <http://data.ecommerce#orderAmount>
+                "2000"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://data.ecommerce#receipt_id>
+                "df13c18d-6e93" .
+
+<http://data.ecommerce/customer/Liesa_Perkins>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Customer_email>
+                "lperkins2@imdb.com" ;
+        <http://data.ecommerce#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://data.ecommerce#first_name>
+                "Liesa" ;
+        <http://data.ecommerce#last_name>
+                "Perkins" ;
+        <http://data.ecommerce#places_order>
+                <http://data.ecommerce/order/ade78110-04f3> .
+
+<http://data.ecommerce/brand/Redmi>
+        a       <http://data.ecommerce#Brand> ;
+        <http://data.ecommerce#brandName>
+                "Redmi" .
+
+<http://data.ecommerce/customer/Julie_Cox>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Customer_email>
+                "jcoxc@nbcnews.com" ;
+        <http://data.ecommerce#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://data.ecommerce#first_name>
+                "Julie" ;
+        <http://data.ecommerce#last_name>
+                "Cox" .
+
+<http://data.ecommerce/product/e4f7d42f-2232-422d-91f1>
+        a                              <http://data.ecommerce#Product> ;
+        <http://data.ecommerce#Item_condition>
+                "New" ;
+        <http://data.ecommerce#Product_date_added>
+                "2021-06-14 18:41:19.0"^^<java:java.sql.Timestamp> ;
+        <http://data.ecommerce#Product_description>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dictum purus. Vestibulum nisl risus, dapibus sit amet vestibulum dignissim, aliquet quis eros." ;
+        <http://data.ecommerce#Product_price>
+                "1050"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://data.ecommerce#brand>  <http://data.ecommerce/brand/Samsung> ;
+        <http://data.ecommerce#category>
+                <http://data.ecommerce/category/Mobiles> ;
+        <http://data.ecommerce#color>  "Mystic Black" ;
+        <http://data.ecommerce#location>
+                "Brussels" ;
+        <http://data.ecommerce#model>  "Samsung Galaxy Note 20 Ultra 5G" ;
+        <http://data.ecommerce#sku>    "e4f7d42f-2232-422d-91f1" ;
+        <http://data.ecommerce#stockQuantity>
+                "105"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://data.ecommerce/product/fc07b915-5f56-4e50-8600>
+        a                              <http://data.ecommerce#Product> ;
+        <http://data.ecommerce#Item_condition>
+                "New" ;
+        <http://data.ecommerce#Product_date_added>
+                "2021-10-06 18:41:19.0"^^<java:java.sql.Timestamp> ;
+        <http://data.ecommerce#Product_description>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dictum purus. Vestibulum nisl risus, dapibus sit amet vestibulum dignissim, aliquet quis eros." ;
+        <http://data.ecommerce#Product_price>
+                "700"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://data.ecommerce#brand>  <http://data.ecommerce/brand/Asus> ;
+        <http://data.ecommerce#category>
+                <http://data.ecommerce/category/Computers> ;
+        <http://data.ecommerce#color>  "Transparent Silver" ;
+        <http://data.ecommerce#location>
+                "Brussels" ;
+        <http://data.ecommerce#model>  "VivoBook 14 (2021)" ;
+        <http://data.ecommerce#sku>    "fc07b915-5f56-4e50-8600" ;
+        <http://data.ecommerce#stockQuantity>
+                "154"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://data.ecommerce/customer/Tyler_MacGowan>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Customer_email>
+                "tmacgowan1@blogspot.com" ;
+        <http://data.ecommerce#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://data.ecommerce#first_name>
+                "Tyler" ;
+        <http://data.ecommerce#last_name>
+                "MacGowan" ;
+        <http://data.ecommerce#places_order>
+                <http://data.ecommerce/order/df13c18d-6e93> .
+
+<http://data.ecommerce/customer/Joyce_Long>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Customer_email>
+                "jlong8@usatoday.com" ;
+        <http://data.ecommerce#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://data.ecommerce#first_name>
+                "Joyce" ;
+        <http://data.ecommerce#last_name>
+                "Long" ;
+        <http://data.ecommerce#places_order>
+                <http://data.ecommerce/order/b0bf1fcf-295d> .
+
+<http://data.ecommerce/address/13%20Moulton%20Lane,9404%20Clyde%20Gallagher,Ninove,Belgium>
+        a       <http://data.ecommerce#Address> ;
+        <http://data.ecommerce#Address_address>
+                "13 Moulton Lane,9404 Clyde Gallagher,Ninove,Belgium" ;
+        <http://data.ecommerce#Customer_email>
+                <http://data.ecommerce/customer/Theresa_Artz> .
+
+<http://data.ecommerce/address/53710%09Pine%20View%0901778%20Heffernan%20Trail,Carlifonia,United%20States>
+        a       <http://data.ecommerce#Address> ;
+        <http://data.ecommerce#Address_address>
+                "53710\tPine View\t01778 Heffernan Trail,Carlifonia,United States" ;
+        <http://data.ecommerce#Customer_email>
+                <http://data.ecommerce/customer/Adriane_Sire> .
+
+<http://data.ecommerce/address/31%20Clemons%20Center,6594%09Welch,Brussels,Belgium>
+        a       <http://data.ecommerce#Address> ;
+        <http://data.ecommerce#Address_address>
+                "31 Clemons Center,6594\tWelch,Brussels,Belgium" ;
+        <http://data.ecommerce#Customer_email>
+                <http://data.ecommerce/customer/Thornton_Macvey> .
+
+<http://data.ecommerce/admin/Amadou%20Sarjo%20Jallow>
+        a       <http://data.ecommerce#Admin> ;
+        <http://data.ecommerce#Admin_advertises>
+                <http://data.ecommerce/product/8d428fc2-d711-4905-a0ad> , <http://data.ecommerce/product/2c5311ac-aea1-443e-b15e> , <http://data.ecommerce/product/18903ea8-0f19-4e87-a0c9> , <http://data.ecommerce/product/71b399d0-8f8b-42eb-9b47> , <http://data.ecommerce/product/4988825f-72da-44a1-9a01> , <http://data.ecommerce/product/3b08e48f-9be1-454b-8374> , <http://data.ecommerce/product/b362f9f0-1f0d-4b2e-8e1d> , <http://data.ecommerce/product/3a62141b-933c-440c-a5b7> , <http://data.ecommerce/product/51235f3d-4fbe-402b-9bbc> , <http://data.ecommerce/product/4a0bec5b-f0c8-4e0c-8182> ;
+        <http://data.ecommerce#Admin_email>
+                "amadou.sarjo.jallow@soko.com" ;
+        <http://data.ecommerce#Admin_telephone>
+                "+32466251959" ;
+        <http://data.ecommerce#adminName>
+                "Amadou Sarjo Jallow" .
+
+<http://data.ecommerce/product/18903ea8-0f19-4e87-a0c9>
+        a                              <http://data.ecommerce#Product> ;
+        <http://data.ecommerce#Item_condition>
+                "New" ;
+        <http://data.ecommerce#Product_date_added>
+                "2021-10-09 16:40:36.317058"^^<java:java.sql.Timestamp> ;
+        <http://data.ecommerce#Product_description>
+                "6.1-inch (15.5 cm diagonal) Liquid Retina HD LCD display\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDual-camera system with 12MP Ultra Wide and Wide cameras; Night mode, Portrait mode, and 4K video up to 60fps\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t12MP TrueDepth front camera with Portrait mode, 4K video, and Slo-Mo\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tFace ID for secure authentication\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tFast-charge capable\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tWireless charging\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t" ;
+        <http://data.ecommerce#Product_price>
+                "1000"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://data.ecommerce#brand>  <http://data.ecommerce/brand/Apple> ;
+        <http://data.ecommerce#category>
+                <http://data.ecommerce/category/Mobiles> ;
+        <http://data.ecommerce#color>  "White" ;
+        <http://data.ecommerce#location>
+                "California" ;
+        <http://data.ecommerce#model>  "IPhone 11" ;
+        <http://data.ecommerce#sku>    "18903ea8-0f19-4e87-a0c9" ;
+        <http://data.ecommerce#stockQuantity>
+                "120"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://data.ecommerce/address/4%20Sunbrook%20Way,7823%20Sage,Brussels,Belgium>
+        a       <http://data.ecommerce#Address> ;
+        <http://data.ecommerce#Address_address>
+                "4 Sunbrook Way,7823 Sage,Brussels,Belgium" ;
+        <http://data.ecommerce#Customer_email>
+                <http://data.ecommerce/customer/Karoline_Klehn> .
+
+<http://data.ecommerce/product/08749f5a-ed6c-493c-9f63>
+        a                              <http://data.ecommerce#Product> ;
+        <http://data.ecommerce#Item_condition>
+                "New" ;
+        <http://data.ecommerce#Product_date_added>
+                "2021-07-16 18:41:19.0"^^<java:java.sql.Timestamp> ;
+        <http://data.ecommerce#Product_description>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dictum purus. Vestibulum nisl risus, dapibus sit amet vestibulum dignissim, aliquet quis eros." ;
+        <http://data.ecommerce#Product_price>
+                "1500"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://data.ecommerce#brand>  <http://data.ecommerce/brand/Samsung> ;
+        <http://data.ecommerce#category>
+                <http://data.ecommerce/category/Mobiles> ;
+        <http://data.ecommerce#color>  "Phantom Black" ;
+        <http://data.ecommerce#location>
+                "Ghent" ;
+        <http://data.ecommerce#model>  "Samsung Galaxy Z Fold3 5G" ;
+        <http://data.ecommerce#sku>    "08749f5a-ed6c-493c-9f63" ;
+        <http://data.ecommerce#stockQuantity>
+                "80"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://data.ecommerce/category/Computers>
+        a       <http://data.ecommerce#Category> ;
+        <http://data.ecommerce#Category_description>
+                "Computers and computer equipements" ;
+        <http://data.ecommerce#categoryName>
+                "Computers" .
+
+<http://data.ecommerce/category/Movies%20&%20Music>
+        a       <http://data.ecommerce#Category> ;
+        <http://data.ecommerce#categoryName>
+                "Movies & Music" .
+
+<http://data.ecommerce/customer/Sally_Bendan>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Customer_email>
+                "sbendani@xinhuanet.com" ;
+        <http://data.ecommerce#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://data.ecommerce#first_name>
+                "Sally" ;
+        <http://data.ecommerce#last_name>
+                "Bendan" .
+
+<http://data.ecommerce/order/08772404-bc1b>
+        a                             <http://data.ecommerce#Order> ;
+        <http://data.ecommerce#date>  "2021-11-01 18:41:19.0"^^<java:java.sql.Timestamp> ;
+        <http://data.ecommerce#orderAmount>
+                "2000"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://data.ecommerce#receipt_id>
+                "08772404-bc1b" .
+
+<http://data.ecommerce/order/f1cb31a1-7912>
+        a                             <http://data.ecommerce#Order> ;
+        <http://data.ecommerce#date>  "2021-11-01 18:41:19.0"^^<java:java.sql.Timestamp> ;
+        <http://data.ecommerce#orderAmount>
+                "2000"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://data.ecommerce#receipt_id>
+                "f1cb31a1-7912" .
+
+<http://data.ecommerce/order/d4f8f116-d586>
+        a                             <http://data.ecommerce#Order> ;
+        <http://data.ecommerce#date>  "2021-11-01 18:41:19.0"^^<java:java.sql.Timestamp> ;
+        <http://data.ecommerce#orderAmount>
+                "2000"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://data.ecommerce#receipt_id>
+                "d4f8f116-d586" .
+
+<http://data.ecommerce/product/97e94d6a-aea2-4695-9722>
+        a                              <http://data.ecommerce#Product> ;
+        <http://data.ecommerce#Item_condition>
+                "New" ;
+        <http://data.ecommerce#Product_date_added>
+                "2021-06-14 18:41:19.0"^^<java:java.sql.Timestamp> ;
+        <http://data.ecommerce#Product_description>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dictum purus. Vestibulum nisl risus, dapibus sit amet vestibulum dignissim, aliquet quis eros." ;
+        <http://data.ecommerce#Product_price>
+                "1050"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://data.ecommerce#brand>  <http://data.ecommerce/brand/Samsung> ;
+        <http://data.ecommerce#category>
+                <http://data.ecommerce/category/Mobiles> ;
+        <http://data.ecommerce#color>  "Mystic Black" ;
+        <http://data.ecommerce#location>
+                "London" ;
+        <http://data.ecommerce#model>  "Samsung Galaxy Note 20 Ultra 5G" ;
+        <http://data.ecommerce#sku>    "97e94d6a-aea2-4695-9722" ;
+        <http://data.ecommerce#stockQuantity>
+                "100"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://data.ecommerce/address/9196%20Hallows%20Terrace,6834%20American,Brussels,Belgium>
+        a       <http://data.ecommerce#Address> ;
+        <http://data.ecommerce#Address_address>
+                "9196 Hallows Terrace,6834 American,Brussels,Belgium" ;
+        <http://data.ecommerce#Customer_email>
+                <http://data.ecommerce/customer/Caralie_Elliot> .
+
+<http://data.ecommerce/delivery_status/Delivered>
+        a       <http://data.ecommerce#Delivered> ;
+        <http://data.ecommerce#description>
+                "lorem ipsum si dolor" .
+
+<http://data.ecommerce/order/6bdf82b2-7e6d>
+        a                             <http://data.ecommerce#Order> ;
+        <http://data.ecommerce#date>  "2021-11-01 18:41:19.0"^^<java:java.sql.Timestamp> ;
+        <http://data.ecommerce#orderAmount>
+                "2000"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://data.ecommerce#receipt_id>
+                "6bdf82b2-7e6d" .
+
+<http://data.ecommerce/order/ade78110-04f3>
+        a                             <http://data.ecommerce#Order> ;
+        <http://data.ecommerce#date>  "2021-11-01 18:41:19.0"^^<java:java.sql.Timestamp> ;
+        <http://data.ecommerce#orderAmount>
+                "2000"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://data.ecommerce#receipt_id>
+                "ade78110-04f3" .
+
+<http://data.ecommerce/customer/Wallis_Boule>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Customer_email>
+                "wboulee@wp.com" ;
+        <http://data.ecommerce#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://data.ecommerce#first_name>
+                "Wallis" ;
+        <http://data.ecommerce#last_name>
+                "Boule" .
+
+<http://data.ecommerce/product/4988825f-72da-44a1-9a01>
+        a                              <http://data.ecommerce#Product> ;
+        <http://data.ecommerce#Item_condition>
+                "New" ;
+        <http://data.ecommerce#Product_date_added>
+                "2021-10-11 16:51:12.0"^^<java:java.sql.Timestamp> ;
+        <http://data.ecommerce#Product_description>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dictum purus. Vestibulum nisl risus, dapibus sit amet vestibulum dignissim, aliquet quis eros." ;
+        <http://data.ecommerce#Product_price>
+                "450"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://data.ecommerce#brand>  <http://data.ecommerce/brand/Apple> ;
+        <http://data.ecommerce#category>
+                <http://data.ecommerce/category/Mobiles> ;
+        <http://data.ecommerce#color>  "Black" ;
+        <http://data.ecommerce#location>
+                "California" ;
+        <http://data.ecommerce#model>  "MBP22HN/A" ;
+        <http://data.ecommerce#sku>    "4988825f-72da-44a1-9a01" ;
+        <http://data.ecommerce#stockQuantity>
+                "85"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://data.ecommerce/address/G4%09Village%20Green,%2044011%20Pearson%20Hill,Glasgow,United%20Kingdom>
+        a       <http://data.ecommerce#Address> ;
+        <http://data.ecommerce#Address_address>
+                "G4\tVillage Green, 44011 Pearson Hill,Glasgow,United Kingdom" ;
+        <http://data.ecommerce#Customer_email>
+                <http://data.ecommerce/customer/Bren_Casillis> .
+
+<http://data.ecommerce/customer/Yardley_Doswell>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Customer_email>
+                "ydoswell1@soundcloud.com" ;
+        <http://data.ecommerce#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://data.ecommerce#first_name>
+                "Yardley" ;
+        <http://data.ecommerce#last_name>
+                "Doswell" ;
+        <http://data.ecommerce#places_order>
+                <http://data.ecommerce/order/3e176920-b166> .
+
+<http://data.ecommerce/customer/Karlik_Sinnatt>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Customer_email>
+                "ksinnattc@earthlink.net" ;
+        <http://data.ecommerce#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://data.ecommerce#first_name>
+                "Karlik" ;
+        <http://data.ecommerce#last_name>
+                "Sinnatt" .
+
+<http://data.ecommerce/address/BT2%09Magdeline%0999%20Carberry%20Plaza,Belfast,United%20Kingdom>
+        a       <http://data.ecommerce#Address> ;
+        <http://data.ecommerce#Address_address>
+                "BT2\tMagdeline\t99 Carberry Plaza,Belfast,United Kingdom" ;
+        <http://data.ecommerce#Customer_email>
+                <http://data.ecommerce/customer/Hazlett_Jeannard> .
+
+<http://data.ecommerce/address/36689%09Sunnyside%0922183%20Algoma%20Avenue,Carlifonia,United%20States>
+        a       <http://data.ecommerce#Address> ;
+        <http://data.ecommerce#Address_address>
+                "36689\tSunnyside\t22183 Algoma Avenue,Carlifonia,United States" ;
+        <http://data.ecommerce#Customer_email>
+                <http://data.ecommerce/customer/Julie_Cox> .
+
+<http://data.ecommerce/customer/Roz_Thurley>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Customer_email>
+                "rthurley3@amazon.co.jp" ;
+        <http://data.ecommerce#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://data.ecommerce#first_name>
+                "Roz" ;
+        <http://data.ecommerce#last_name>
+                "Thurley" ;
+        <http://data.ecommerce#places_order>
+                <http://data.ecommerce/order/05ab0cd0-ab45> .
+
+<http://data.ecommerce/address/32542%20Fieldstone%20Point,6834%09Dexter,Brussels,Belgium>
+        a       <http://data.ecommerce#Address> ;
+        <http://data.ecommerce#Address_address>
+                "32542 Fieldstone Point,6834\tDexter,Brussels,Belgium" ;
+        <http://data.ecommerce#Customer_email>
+                <http://data.ecommerce/customer/Mose_Solomonides> .
+
+<http://data.ecommerce/address/63126%20Ronald%20Regan,%2039352%20Armistice%20Street,Saint%20Louis,United%20States>
+        a       <http://data.ecommerce#Address> ;
+        <http://data.ecommerce#Address_address>
+                "63126 Ronald Regan, 39352 Armistice Street,Saint Louis,United States" ;
+        <http://data.ecommerce#Customer_email>
+                <http://data.ecommerce/customer/Wolf_Malzard> .
+
+<http://data.ecommerce/customer/Avril_Wallentin>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Customer_email>
+                "awallentinc@sfgate.com" ;
+        <http://data.ecommerce#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://data.ecommerce#first_name>
+                "Avril" ;
+        <http://data.ecommerce#last_name>
+                "Wallentin" .
+
+<http://data.ecommerce/product/d695052e-d926-4d01-bb3b>
+        a                              <http://data.ecommerce#Product> ;
+        <http://data.ecommerce#Item_condition>
+                "New" ;
+        <http://data.ecommerce#Product_date_added>
+                "2021-07-16 18:41:19.0"^^<java:java.sql.Timestamp> ;
+        <http://data.ecommerce#Product_description>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dictum purus. Vestibulum nisl risus, dapibus sit amet vestibulum dignissim, aliquet quis eros." ;
+        <http://data.ecommerce#Product_price>
+                "700"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://data.ecommerce#brand>  <http://data.ecommerce/brand/Asus> ;
+        <http://data.ecommerce#category>
+                <http://data.ecommerce/category/Computers> ;
+        <http://data.ecommerce#color>  "Eclipse Gray" ;
+        <http://data.ecommerce#location>
+                "Brussels" ;
+        <http://data.ecommerce#model>  "ROG Strix G17 (2021)" ;
+        <http://data.ecommerce#sku>    "d695052e-d926-4d01-bb3b" ;
+        <http://data.ecommerce#stockQuantity>
+                "104"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://data.ecommerce/customer/Cooper_Bradbeer>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Customer_email>
+                "cbradbeer6@hao123.com" ;
+        <http://data.ecommerce#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://data.ecommerce#first_name>
+                "Cooper" ;
+        <http://data.ecommerce#last_name>
+                "Bradbeer" ;
+        <http://data.ecommerce#places_order>
+                <http://data.ecommerce/order/949b0b3d-f6b9> .
+
+<http://data.ecommerce/address/CB4%09Farmco%098983%20Granby%20Alley,London,United%20Kingdom>
+        a       <http://data.ecommerce#Address> ;
+        <http://data.ecommerce#Address_address>
+                "CB4\tFarmco\t8983 Granby Alley,London,United Kingdom" ;
+        <http://data.ecommerce#Customer_email>
+                <http://data.ecommerce/customer/Leland_Bermingham> .
+
+<http://data.ecommerce/address/RH5%09Golf%20Course%0987%20Mandrake%20Junction,,United%20Kingdom>
+        a       <http://data.ecommerce#Address> ;
+        <http://data.ecommerce#Address_address>
+                "RH5\tGolf Course\t87 Mandrake Junction,,United Kingdom" ;
+        <http://data.ecommerce#Customer_email>
+                <http://data.ecommerce/customer/Gweneth_Libbis> .
+
+<http://data.ecommerce/customer/Orville_Cubberley>
+        a       <http://data.ecommerce#Customer> ;
+        <http://data.ecommerce#Customer_email>
+                "ocubberley3@craigslist.org" ;
+        <http://data.ecommerce#birth_date>
+                "1996-07-27"^^<java:java.sql.Date> ;
+        <http://data.ecommerce#first_name>
+                "Orville" ;
+        <http://data.ecommerce#last_name>
+                "Cubberley" ;
+        <http://data.ecommerce#places_order>
+                <http://data.ecommerce/order/5ab6e3ca-f9c3> .
+
+<http://data.ecommerce/delivery_kind/Normal>
+        a                              <http://data.ecommerce#Normal> ;
+        <http://data.ecommerce#delivery_duration>
+                "7"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://data.ecommerce#price>  "8.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://data.ecommerce/product/8d428fc2-d711-4905-a0ad>
+        a                              <http://data.ecommerce#Product> ;
+        <http://data.ecommerce#Item_condition>
+                "New" ;
+        <http://data.ecommerce#Product_date_added>
+                "2021-09-04 13:51:12.0"^^<java:java.sql.Timestamp> ;
+        <http://data.ecommerce#Product_description>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dictum purus. Vestibulum nisl risus, dapibus sit amet vestibulum dignissim, aliquet quis eros." ;
+        <http://data.ecommerce#Product_price>
+                "1000"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://data.ecommerce#brand>  <http://data.ecommerce/brand/Apple> ;
+        <http://data.ecommerce#category>
+                <http://data.ecommerce/category/Mobiles> ;
+        <http://data.ecommerce#color>  "White" ;
+        <http://data.ecommerce#location>
+                "London" ;
+        <http://data.ecommerce#model>  "IPhone 11" ;
+        <http://data.ecommerce#sku>    "8d428fc2-d711-4905-a0ad" ;
+        <http://data.ecommerce#stockQuantity>
+                "65"^^<http://www.w3.org/2001/XMLSchema#int> .

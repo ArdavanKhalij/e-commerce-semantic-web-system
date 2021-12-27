@@ -1,0 +1,244 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+#@prefix ecommerce: <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#>.
+@prefix ecommerce: <http://data.ecommerce#>.
+
+#Actors Mapping
+<#Supplier>
+  rr:logicalTable [rr:tableName "ecommerce.supplier"];
+  rr:subjectMap[
+    rr:template "http://data.ecommerce/Supplier#{companyname}";
+    rr:class ecommerce:supplier;
+  ];
+  rr:predicateObjectMap[
+    rr:predicate ecommerce:Supplierbce;
+    rr:objectMap[
+      rr:column "bce"
+    ]
+  ];
+  rr:predicateObjectMap[
+    rr:predicate ecommerce:Supplier_companyName;
+    rr:objectMap[
+      rr:column "companyname"
+    ]
+  ];
+  rr:predicateObjectMap[
+    rr:predicate ecommerce:Supplier_postalCode;
+    rr:objectMap[
+      rr:column "postalcode"
+    ]
+  ];
+  rr:predicateObjectMap[
+    rr:predicate ecommerce:Supplier_ph;
+    rr:objectMap[
+      rr:column "telephone"
+    ]
+  ];
+  rr:predicateObjectMap[
+    rr:predicate ecommerce:Supplier_country;
+    rr:objectMap[
+      rr:column "addresscountry"
+    ]
+  ];
+  rr:predicateObjectMap[
+    rr:predicate ecommerce:Supplier_streetAddress;
+    rr:objectMap[
+      rr:column "streetaddress"
+    ]
+  ];
+  rr:predicateObjectMap[
+    rr:predicate ecommerce:supplier_addressLocaity;
+    rr:objectMap[
+      rr:column "addresslocality"
+    ]
+  ];
+  rr:predicateObjectMap[
+    rr:predicate ecommerce:Supplier_city;
+    rr:objectMap[
+      rr:column "addresscity"
+    ]
+  ];
+  rr:predicateObjectMap[
+    rr:predicate ecommerce:Supplier_email;
+    rr:objectMap[
+      rr:column "email"
+    ]
+  ].
+  <#Supplies>
+  rr:logicalTable [rr:tableName "ecommerce.supplies"];
+  rr:subjectMap[
+    rr:template "http://data.ecommerce/Supplies#{suppliesid}";
+    rr:class ecommerce:Supplies;
+  ];
+  rr:predicateObjectMap[
+    rr:predicate ecommerce:suppliesID;
+    rr:objectMap[
+      rr:column "suppliesid"
+    ]
+  ];
+  rr:predicateObjectMap[
+    rr:predicate ecommerce:arrivalDate;
+    rr:objectMap[
+      rr:column "arrivaldate"
+    ]
+  ];
+  rr:predicateObjectMap[
+    rr:predicate ecommerce:supplyState;
+    rr:objectMap[
+      rr:column "supplystate"
+    ]
+  ].
+  <#SuppliesStock>
+  rr:logicalTable [rr:tableName "ecommerce.suppliesstock"];
+  rr:subjectMap[
+    rr:template "http://data.ecommerce/SuppliesStock#{supply}";
+    rr:class ecommerce:SuppliesStock;
+  ];
+  rr:predicateObjectMap[
+    rr:predicate ecommerce:suppliesStockSku;
+    rr:objectMap[
+      rr:column "supply"
+    ]
+  ];
+  rr:predicateObjectMap[
+    rr:predicate ecommerce:suppliesOrderPrice;
+    rr:objectMap[
+      rr:column "price"
+    ]
+  ];
+  rr:predicateObjectMap[
+    rr:predicate ecommerce:suppliesOrderQuantity;
+    rr:objectMap[
+      rr:column "quantity"
+    ]
+  ].
+  
+  # adding products for supplyStock class 
+<#ProductsSupplies>
+  rr:logicalTable [rr:tableName "ecommerce.s_products"];
+  rr:subjectMap[
+    rr:template "http://data.ecommerce/Product#{sku}";
+    rr:class ecommerce:Product;
+  ];
+  rr:predicateObjectMap[
+    rr:predicate ecommerce:sku;
+    rr:objectMap[
+      rr:column "sku"
+    ]
+  ];
+  rr:predicateObjectMap[
+    rr:predicate ecommerce:brand;
+    rr:objectMap[
+      rr:column "brand"
+    ]
+  ];
+  rr:predicateObjectMap[
+    rr:predicate ecommerce:category;
+    rr:objectMap[
+      rr:column "category"
+    ]
+  ];
+  rr:predicateObjectMap[
+    rr:predicate ecommerce:color;
+    rr:objectMap[
+      rr:column "color"
+    ]
+  ];
+  rr:predicateObjectMap[
+    rr:predicate ecommerce:Item_condition;
+    rr:objectMap[
+      rr:column "itemcondition"
+    ]
+  ];
+  rr:predicateObjectMap[
+    rr:predicate ecommerce:model;
+    rr:objectMap[
+      rr:column "model"
+    ]
+  ];
+  rr:predicateObjectMap[
+    rr:predicate ecommerce:Product_date_added;
+    rr:objectMap[
+      rr:column "date_added"
+    ]
+  ];
+  rr:predicateObjectMap[
+    rr:predicate ecommerce:Product_description;
+    rr:objectMap[
+      rr:column "description"
+    ]
+  ];
+  rr:predicateObjectMap[
+    rr:predicate ecommerce:price;
+    rr:objectMap[
+      rr:column "price"
+    ]
+  ];
+  rr:predicateObjectMap[
+    rr:predicate ecommerce:stockQuantity;
+    rr:objectMap[
+      rr:column "stockquantity"
+    ]
+  ].
+  
+  # adding warehouse for supplies class 
+  <#warehouse>
+  a rr:TriplesMap;
+  rr:logicalTable [
+    rr:tableName "ecommerce.s_warehouse"
+  ];
+  rr:subjectMap [
+    rr:template "http://data.ecommerce/warehouse#{warehousecode}";
+    rr:class ecommerce:Warehouse;
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:warehousecode;
+    rr:objectMap [rr:column "warehousecode"]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:companyname;
+    rr:objectMap [rr:column "companyname"]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:email;
+    rr:objectMap [rr:column "email"]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:telephone;
+    rr:objectMap [rr:column "telephone"]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:addresscountry;
+    rr:objectMap [rr:column "addresscountry"]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:addresscity;
+    rr:objectMap [rr:column "addresscity"]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:addresslocality;
+    rr:objectMap [rr:column "addresslocality"]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:postalcode;
+    rr:objectMap [rr:column "postalcode"]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate ecommerce:streetaddress;
+    rr:objectMap [rr:column "streetaddress"]
+  ].
+  <#SuppliesProperty>
+  rr:logicalTable [rr:sqlQuery """SELECT B.csuppliername As csuppliername, A.norderuuid AS norderuuid FROM ecommerce.purchase_order A
+                                  INNER JOIN ecommerce.supplier2 B ON B.csupplierbce=A.csupplierbce""";
+                   rr:sqlVersion rr:SQL2008;
+  ];
+  rr:subjectMap[
+    rr:template "http://data.ecommerce/supplier#{csuppliername}";
+    rr:class ecommerce:supplier;
+  ];
+  rr:predicateObjectMap[
+    rr:predicate ecommerce:supplies;
+    rr:objectMap[
+      rr:template "http://data.ecommerce/Supplies#{norderuuid}";
+    ]
+  ].
+

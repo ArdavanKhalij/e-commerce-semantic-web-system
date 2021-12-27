@@ -1,0 +1,29 @@
+\mode<presentation>
+
+\newif\if@coloredTitles
+\@coloredTitlesfalse
+\DeclareOption{coloredtitles}{\@coloredTitlestrue}
+
+\newif\if@sectionOnAllSlides
+\@sectionOnAllSlidesfalse
+\DeclareOption{showsection}{\@sectionOnAllSlidestrue}
+
+\ProcessOptions
+
+% Requirement
+\RequirePackage{tikz}
+
+\RequirePackage{vubprivate}
+
+% Settings
+\def\merkbeeld{1cm}
+
+\usecolortheme{vub}
+\useinnertheme{vub}
+\useoutertheme{vub}
+\usefonttheme{vub}
+
+%\setbeamertemplate{navigation symbols}{}
+%\setbeamertemplate{blocks}[rounded][shadow=true]
+
+\mode<all>

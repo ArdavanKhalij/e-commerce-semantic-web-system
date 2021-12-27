@@ -1,0 +1,1076 @@
+@prefix : <http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://data.ecommerceTest> .
+
+<http://data.ecommerceTest> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Admin_advertises
+:Admin_advertises rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf :advertises ;
+                  rdf:type owl:InverseFunctionalProperty ,
+                           owl:AsymmetricProperty ;
+                  rdfs:domain :Admin ;
+                  rdfs:range :Product ;
+                  owl:propertyDisjointWith :Supplier_advertises .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Belongs_To
+:Belongs_To rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
+            rdf:type owl:FunctionalProperty ,
+                     owl:AsymmetricProperty ,
+                     owl:IrreflexiveProperty ;
+            rdfs:domain :Product ;
+            rdfs:range :Category .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Contains
+:Contains rdf:type owl:ObjectProperty ,
+                   owl:InverseFunctionalProperty ,
+                   owl:AsymmetricProperty ,
+                   owl:IrreflexiveProperty ;
+          rdfs:domain :DeliveryTrip ;
+          rdfs:range :Order .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Address
+:Has_Address rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             rdf:type owl:InverseFunctionalProperty ,
+                      owl:AsymmetricProperty ,
+                      owl:IrreflexiveProperty ;
+             rdfs:domain :Customer ;
+             rdfs:range :Address .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Brand
+:Has_Brand rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf owl:topObjectProperty ;
+           rdf:type owl:InverseFunctionalProperty ,
+                    owl:AsymmetricProperty ,
+                    owl:IrreflexiveProperty ;
+           rdfs:domain :Product ;
+           rdfs:range :Brand .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Cart
+:Has_Cart rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf owl:topObjectProperty ;
+          rdf:type owl:FunctionalProperty ,
+                   owl:InverseFunctionalProperty ,
+                   owl:AsymmetricProperty ,
+                   owl:IrreflexiveProperty ;
+          rdfs:domain :Customer ;
+          rdfs:range :Cart .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Delivery_Status
+:Has_Delivery_Status rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf owl:topObjectProperty ;
+                     rdf:type owl:FunctionalProperty ,
+                              owl:AsymmetricProperty ,
+                              owl:IrreflexiveProperty ;
+                     rdfs:domain :Order ;
+                     rdfs:range :Delivery_status .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Image
+:Has_Image rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf owl:topObjectProperty ;
+           rdf:type owl:InverseFunctionalProperty ,
+                    owl:AsymmetricProperty ,
+                    owl:IrreflexiveProperty ;
+           rdfs:domain :Product ;
+           rdfs:range :ProductImage .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Order_Description
+:Has_Order_Description rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf owl:topObjectProperty ;
+                       rdf:type owl:FunctionalProperty ,
+                                owl:AsymmetricProperty ,
+                                owl:IrreflexiveProperty ;
+                       rdfs:domain :Order ;
+                       rdfs:range :Order_Description .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_Payment_Card
+:Has_Payment_Card rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf owl:topObjectProperty ;
+                  rdf:type owl:InverseFunctionalProperty ,
+                           owl:AsymmetricProperty ,
+                           owl:IrreflexiveProperty ;
+                  rdfs:domain :Customer ;
+                  rdfs:range :Payment_Card .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Has_The_Delivery_Type
+:Has_The_Delivery_Type rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf owl:topObjectProperty ;
+                       rdf:type owl:FunctionalProperty ,
+                                owl:AsymmetricProperty ,
+                                owl:IrreflexiveProperty ;
+                       rdfs:domain :Order ;
+                       rdfs:range :Delivery_Type .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Is_Done_By
+:Is_Done_By rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
+            rdf:type owl:FunctionalProperty ,
+                     owl:AsymmetricProperty ,
+                     owl:IrreflexiveProperty ;
+            rdfs:domain :DeliveryTrip ;
+            rdfs:range :TransportVehicle .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Is_In
+:Is_In rdf:type owl:ObjectProperty ;
+       rdfs:subPropertyOf owl:topObjectProperty ;
+       owl:inverseOf :inventory_has ;
+       rdf:type owl:FunctionalProperty ,
+                owl:AsymmetricProperty ,
+                owl:IrreflexiveProperty ;
+       rdfs:domain :Product ;
+       rdfs:range :Inventory ;
+       rdfs:comment "We might have to remove and keep inventory_has which makes more sense" .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Owns
+:Owns rdf:type owl:ObjectProperty ,
+               owl:InverseFunctionalProperty ,
+               owl:AsymmetricProperty ;
+      rdfs:domain :TransportCompany ;
+      rdfs:range :TransportVehicle .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplier_advertises
+:Supplier_advertises rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf :advertises ;
+                     rdf:type owl:InverseFunctionalProperty ,
+                              owl:AsymmetricProperty ;
+                     rdfs:domain :supplier ;
+                     rdfs:range :Product .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#advertises
+:advertises rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#cart_has
+:cart_has rdf:type owl:ObjectProperty ,
+                   owl:InverseFunctionalProperty ,
+                   owl:AsymmetricProperty ;
+          rdfs:domain :Cart ;
+          rdfs:range :Product ;
+          rdfs:comment "A cart contains one or more products" .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#inventory_has
+:inventory_has rdf:type owl:ObjectProperty ,
+                        owl:InverseFunctionalProperty ,
+                        owl:AsymmetricProperty ;
+               rdfs:domain :Inventory ;
+               rdfs:range :Product .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_delivered_to
+:is_delivered_to rdf:type owl:ObjectProperty ,
+                          owl:FunctionalProperty ,
+                          owl:AsymmetricProperty ;
+                 rdfs:domain :Supplies ;
+                 rdfs:range :Warehouse .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#is_stored_in
+:is_stored_in rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty ;
+              owl:inverseOf :warehouse_has ;
+              rdf:type owl:FunctionalProperty ,
+                       owl:AsymmetricProperty ,
+                       owl:IrreflexiveProperty ;
+              rdfs:domain :Product ;
+              rdfs:range :Warehouse ;
+              rdfs:comment "We might have to remove this since a warehouse and a product are connected by an inventory. So it is correct to say that a warehouse has an inventory and an inventory has products" .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#makes_review
+:makes_review rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty ;
+              rdf:type owl:InverseFunctionalProperty ,
+                       owl:AsymmetricProperty ,
+                       owl:IrreflexiveProperty ;
+              rdfs:domain :Customer ;
+              rdfs:range :Reviews ;
+              rdfs:comment "A customer reviews products" .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#places_order
+:places_order rdf:type owl:ObjectProperty ,
+                       owl:InverseFunctionalProperty ,
+                       owl:AsymmetricProperty ;
+              rdfs:domain :Customer ;
+              rdfs:range :Order .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#prefers_delivery_type
+:prefers_delivery_type rdf:type owl:ObjectProperty ,
+                                owl:FunctionalProperty ,
+                                owl:AsymmetricProperty ,
+                                owl:IrreflexiveProperty ;
+                       rdfs:domain :Customer ;
+                       rdfs:range :Delivery_Type ;
+                       rdfs:comment "A customer has a preferred means of delivery" .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#review_is_on
+:review_is_on rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty ;
+              rdf:type owl:FunctionalProperty ,
+                       owl:AsymmetricProperty ,
+                       owl:IrreflexiveProperty ;
+              rdfs:domain :Reviews ;
+              rdfs:range :Product ;
+              rdfs:comment "A review is made on a product by a customer" .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#starts_from
+:starts_from rdf:type owl:ObjectProperty ,
+                      owl:FunctionalProperty ,
+                      owl:AsymmetricProperty ,
+                      owl:IrreflexiveProperty ;
+             rdfs:domain :DeliveryTrip ;
+             rdfs:range :Warehouse .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies
+:supplies rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf owl:topObjectProperty ;
+          rdf:type owl:InverseFunctionalProperty ,
+                   owl:AsymmetricProperty ,
+                   owl:IrreflexiveProperty ;
+          rdfs:domain :supplier ;
+          rdfs:range :Supplies .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplies_has
+:supplies_has rdf:type owl:ObjectProperty ,
+                       owl:InverseFunctionalProperty ,
+                       owl:AsymmetricProperty ,
+                       owl:IrreflexiveProperty ;
+              rdfs:domain :Supplies ;
+              rdfs:range :SuppliesStock .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#warehouse_has
+:warehouse_has rdf:type owl:ObjectProperty ,
+                        owl:InverseFunctionalProperty ,
+                        owl:AsymmetricProperty ,
+                        owl:IrreflexiveProperty ;
+               rdfs:domain :Warehouse ;
+               rdfs:range :Inventory .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Address_address
+:Address_address rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf :address ;
+                 rdfs:domain :Address ;
+                 rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Address_city
+:Address_city rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf :city ;
+              rdfs:domain :Address ;
+              rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Address_country
+:Address_country rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf :country ;
+                 rdfs:domain :Address ;
+                 rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Admin_email
+:Admin_email rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf :email ;
+             rdfs:domain :Admin ;
+             rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Admin_telephone
+:Admin_telephone rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf :telephone ;
+                 rdfs:domain :Admin ;
+                 rdfs:range rdfs:Literal ;
+                 owl:propertyDisjointWith :Supplier_telephone .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Cart_date_added
+:Cart_date_added rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf owl:topDataProperty ;
+                 rdfs:domain :Cart ;
+                 rdfs:range xsd:dateTimeStamp .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Category_description
+:Category_description rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf owl:topDataProperty ;
+                      rdfs:domain :Category ;
+                      rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer_email
+:Customer_email rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf :email ;
+                rdfs:domain :Customer ;
+                rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer_ph
+:Customer_ph rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf :phone_number ;
+             rdfs:domain :Customer ;
+             rdfs:range rdfs:Literal .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#DeliveryTrip_ID
+:DeliveryTrip_ID rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf owl:topDataProperty ;
+                 rdfs:domain :DeliveryTrip ;
+                 rdfs:range xsd:nonNegativeInteger .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#InventoryQuantity
+:InventoryQuantity rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf owl:topDataProperty ;
+                   rdfs:domain :Inventory ;
+                   rdfs:range xsd:nonNegativeInteger .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Item_condition
+:Item_condition rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf owl:topDataProperty ;
+                rdfs:domain :Product ;
+                rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#ProductImage_url
+:ProductImage_url rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf :url ;
+                  rdfs:domain :ProductImage ;
+                  rdfs:range rdfs:Literal ;
+                  owl:propertyDisjointWith :Supplier_url .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_date_added
+:Product_date_added rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf owl:topDataProperty ;
+                    rdfs:domain :Product ;
+                    rdfs:range xsd:dateTimeStamp .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_description
+:Product_description rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf owl:topDataProperty ;
+                     rdfs:domain :Product ;
+                     rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product_price
+:Product_price rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf owl:topDataProperty ;
+               rdfs:domain :Product ;
+               rdfs:range xsd:double .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplier_city
+:Supplier_city rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf :city ;
+               rdfs:domain :supplier ;
+               rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplier_companyName
+:Supplier_companyName rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf :companyName ;
+                      rdfs:domain :supplier ;
+                      rdfs:range xsd:string ;
+                      owl:propertyDisjointWith :Warehouse_companyName .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplier_country
+:Supplier_country rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf :country ;
+                  rdfs:domain :supplier ;
+                  rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplier_email
+:Supplier_email rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf :email ;
+                rdfs:domain :supplier ;
+                rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplier_ph
+:Supplier_ph rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf :phone_number ;
+             rdfs:domain :supplier ;
+             rdfs:range rdfs:Literal .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplier_postalCode
+:Supplier_postalCode rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf :postalCode ;
+                     rdfs:domain :supplier ;
+                     rdfs:range rdfs:Literal ;
+                     owl:propertyDisjointWith :Warehouse_postalCode .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplier_streetAddress
+:Supplier_streetAddress rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf :address ;
+                        rdfs:domain :supplier ;
+                        rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplier_telephone
+:Supplier_telephone rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf :telephone ;
+                    rdfs:domain :supplier ;
+                    rdfs:range rdfs:Literal .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplier_url
+:Supplier_url rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf :url ;
+              rdfs:domain :supplier ;
+              rdfs:range rdfs:Literal .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplierbce
+:Supplierbce rdf:type owl:DatatypeProperty ;
+             owl:equivalentProperty :bce ;
+             rdfs:subPropertyOf owl:topDataProperty ;
+             rdfs:domain :supplier ;
+             rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#TransportCompanyID
+:TransportCompanyID rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf owl:topDataProperty ;
+                    rdfs:domain :TransportCompany ;
+                    rdfs:range xsd:nonNegativeInteger .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#TransportCompanyname
+:TransportCompanyname rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf owl:topDataProperty ;
+                      rdfs:domain :TransportCompany ;
+                      rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#TransportVehicleID
+:TransportVehicleID rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf owl:topDataProperty ;
+                    rdfs:domain :TransportVehicle ;
+                    rdfs:range xsd:nonNegativeInteger .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Warehouse_city
+:Warehouse_city rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf :city ;
+                rdfs:domain :Warehouse ;
+                rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Warehouse_companyName
+:Warehouse_companyName rdf:type owl:DatatypeProperty ;
+                       rdfs:subPropertyOf :companyName ;
+                       rdfs:domain :Warehouse ;
+                       rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Warehouse_country
+:Warehouse_country rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf :country ;
+                   rdfs:domain :Warehouse ;
+                   rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Warehouse_email
+:Warehouse_email rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf :email ;
+                 rdfs:domain :Warehouse ;
+                 rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Warehouse_ph
+:Warehouse_ph rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf :phone_number ;
+              rdfs:domain :Warehouse ;
+              rdfs:range rdfs:Literal .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Warehouse_postalCode
+:Warehouse_postalCode rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf :postalCode ;
+                      rdfs:domain :Warehouse ;
+                      rdfs:range rdfs:Literal .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Warehouse_streetAddress
+:Warehouse_streetAddress rdf:type owl:DatatypeProperty ;
+                         rdfs:subPropertyOf :address ;
+                         rdfs:domain :Warehouse ;
+                         rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#address
+:address rdf:type owl:DatatypeProperty ;
+         rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#addressLocality
+:addressLocality rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#adminName
+:adminName rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf owl:topDataProperty ;
+           rdfs:domain :Admin ;
+           rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#api_key
+:api_key rdf:type owl:DatatypeProperty ;
+         rdfs:subPropertyOf owl:topDataProperty ;
+         rdfs:domain :TransportCompany ;
+         rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrivalDate
+:arrivalDate rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty ;
+             rdfs:domain :Supplies ;
+             rdfs:range xsd:dateTimeStamp .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#arrival_time
+:arrival_time rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf owl:topDataProperty ;
+              rdfs:domain :DeliveryTrip ;
+              rdfs:range xsd:dateTime .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#bce
+:bce rdf:type owl:DatatypeProperty ;
+     rdfs:subPropertyOf owl:topDataProperty ;
+     rdfs:domain :supplier ;
+     rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#birth_date
+:birth_date rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf owl:topDataProperty ;
+            rdfs:domain :Customer ;
+            rdfs:range xsd:dateTime .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#brand
+:brand rdf:type owl:DatatypeProperty ;
+       rdfs:subPropertyOf owl:topDataProperty ;
+       rdfs:domain :Product ;
+       rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#brandName
+:brandName rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf owl:topDataProperty ;
+           rdfs:domain :Brand ;
+           rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#cardExpiryDate
+:cardExpiryDate rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf owl:topDataProperty ;
+                rdfs:domain :Payment_Card ;
+                rdfs:range xsd:dateTime .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#cardHolderName
+:cardHolderName rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf owl:topDataProperty ;
+                rdfs:domain :Payment_Card ;
+                rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#cardNumber
+:cardNumber rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf owl:topDataProperty ;
+            rdfs:domain :Payment_Card ;
+            rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#category
+:category rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf owl:topDataProperty ;
+          rdfs:domain :Product ;
+          rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#categoryName
+:categoryName rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf owl:topDataProperty ;
+              rdfs:domain :Category ;
+              rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#city
+:city rdf:type owl:DatatypeProperty ;
+      rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#color
+:color rdf:type owl:DatatypeProperty ;
+       rdfs:subPropertyOf owl:topDataProperty ;
+       rdfs:domain :Product ;
+       rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#companyName
+:companyName rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#country
+:country rdf:type owl:DatatypeProperty ;
+         rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#date
+:date rdf:type owl:DatatypeProperty ;
+      rdfs:subPropertyOf owl:topDataProperty ;
+      rdfs:domain :Order ;
+      rdfs:range xsd:dateTimeStamp .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#deliveryStatus
+:deliveryStatus rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf owl:topDataProperty ;
+                rdfs:domain :Delivery_status ;
+                rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#delivery_duration
+:delivery_duration rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf owl:topDataProperty ;
+                   rdfs:domain :Delivery_Type ;
+                   rdfs:range xsd:nonNegativeInteger .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#departure_time
+:departure_time rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf owl:topDataProperty ;
+                rdfs:domain :DeliveryTrip ;
+                rdfs:range xsd:dateTime .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#description
+:description rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty ;
+             rdfs:domain :Delivery_status ;
+             rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#email
+:email rdf:type owl:DatatypeProperty ;
+       rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#first_name
+:first_name rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf owl:topDataProperty ;
+            rdfs:domain :Customer ;
+            rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#full_address
+:full_address rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf owl:topDataProperty ;
+              rdfs:domain :Order ;
+              rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#last_name
+:last_name rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf owl:topDataProperty ;
+           rdfs:domain :Customer ;
+           rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#location
+:location rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf owl:topDataProperty ;
+          rdfs:domain :Product ;
+          rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#model
+:model rdf:type owl:DatatypeProperty ;
+       rdfs:subPropertyOf owl:topDataProperty ;
+       rdfs:domain :Product ;
+       rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#numberof
+:numberof rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf owl:topDataProperty ;
+          rdfs:domain :Order_Description ;
+          rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#orderAmount
+:orderAmount rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty ;
+             rdfs:domain :Order ;
+             rdfs:range xsd:double .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#phone_number
+:phone_number rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#position
+:position rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf owl:topDataProperty ;
+          rdfs:domain :TransportVehicle ;
+          rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#postalCode
+:postalCode rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#price
+:price rdf:type owl:DatatypeProperty ;
+       rdfs:subPropertyOf owl:topDataProperty ;
+       rdfs:domain :Delivery_Type ;
+       rdfs:range xsd:double .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#price_per_km
+:price_per_km rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf owl:topDataProperty ;
+              rdfs:domain :TransportCompany ;
+              rdfs:range xsd:double .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#receipt_id
+:receipt_id rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf owl:topDataProperty ;
+            rdfs:domain :Order ;
+            rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#sku
+:sku rdf:type owl:DatatypeProperty ;
+     rdfs:domain :Product ;
+     rdfs:range rdfs:Literal .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#stockQuantity
+:stockQuantity rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf owl:topDataProperty ;
+               rdfs:domain :Product ;
+               rdfs:range xsd:nonNegativeInteger .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplier_addressLocaity
+:supplier_addressLocaity rdf:type owl:DatatypeProperty ;
+                         rdfs:subPropertyOf :addressLocality ;
+                         rdfs:domain :supplier ;
+                         rdfs:range xsd:string ;
+                         owl:propertyDisjointWith :warehouse_addressLocaity .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesID
+:suppliesID rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf owl:topDataProperty ;
+            rdfs:domain :Supplies ;
+            rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesOrderPrice
+:suppliesOrderPrice rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf owl:topDataProperty ;
+                    rdfs:domain :SuppliesStock ;
+                    rdfs:range xsd:double .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesOrderQuantity
+:suppliesOrderQuantity rdf:type owl:DatatypeProperty ;
+                       rdfs:subPropertyOf owl:topDataProperty ;
+                       rdfs:domain :SuppliesStock ;
+                       rdfs:range xsd:nonNegativeInteger .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#suppliesStockSku
+:suppliesStockSku rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :SuppliesStock ;
+                  rdfs:range rdfs:Literal .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplyState
+:supplyState rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty ;
+             rdfs:domain :Supplies ;
+             rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#telephone
+:telephone rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#truck
+:truck rdf:type owl:DatatypeProperty ;
+       rdfs:subPropertyOf owl:topDataProperty ;
+       rdfs:domain :DeliveryTrip ;
+       rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#url
+:url rdf:type owl:DatatypeProperty ;
+     rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#warehous_code
+:warehous_code rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf owl:topDataProperty ;
+               rdfs:domain :Warehouse ;
+               rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#warehouse_addressLocaity
+:warehouse_addressLocaity rdf:type owl:DatatypeProperty ;
+                          rdfs:subPropertyOf :addressLocality ;
+                          rdfs:domain :Warehouse ;
+                          rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Address
+:Address rdf:type owl:Class ;
+         rdfs:subClassOf owl:Thing .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Admin
+:Admin rdf:type owl:Class ;
+       rdfs:subClassOf :Person ;
+       owl:disjointWith :Customer .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Brand
+:Brand rdf:type owl:Class ;
+       rdfs:subClassOf owl:Thing .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Cart
+:Cart rdf:type owl:Class ;
+      rdfs:subClassOf owl:Thing .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Category
+:Category rdf:type owl:Class ;
+          rdfs:subClassOf owl:Thing .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Credit
+:Credit rdf:type owl:Class ;
+        rdfs:subClassOf :Payment_Card ;
+        owl:disjointWith :Debit .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Customer
+:Customer rdf:type owl:Class ;
+          rdfs:subClassOf :Person .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Debit
+:Debit rdf:type owl:Class ;
+       rdfs:subClassOf :Payment_Card .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Delivered
+:Delivered rdf:type owl:Class ;
+           rdfs:subClassOf :Delivery_status ;
+           owl:disjointWith :Not_Delivered .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#DeliveryTrip
+:DeliveryTrip rdf:type owl:Class ;
+              rdfs:subClassOf owl:Thing .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Delivery_Type
+:Delivery_Type rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Delivery_status
+:Delivery_status rdf:type owl:Class ;
+                 rdfs:comment "The status of a delivery"^^xsd:string .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Inventory
+:Inventory rdf:type owl:Class ;
+           rdfs:subClassOf owl:Thing .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Normal
+:Normal rdf:type owl:Class ;
+        rdfs:subClassOf :Delivery_Type ;
+        owl:disjointWith :Perimum .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Not_Delivered
+:Not_Delivered rdf:type owl:Class ;
+               rdfs:subClassOf :Delivery_status .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Order
+:Order rdf:type owl:Class ;
+       rdfs:subClassOf owl:Thing .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Order_Description
+:Order_Description rdf:type owl:Class ;
+                   rdfs:subClassOf owl:Thing .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Payment_Card
+:Payment_Card rdf:type owl:Class ;
+              rdfs:subClassOf owl:Thing .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Perimum
+:Perimum rdf:type owl:Class ;
+         rdfs:subClassOf :Delivery_Type .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Person
+:Person rdf:type owl:Class ;
+        rdfs:subClassOf owl:Thing .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Product
+:Product rdf:type owl:Class ;
+         rdfs:subClassOf owl:Thing .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#ProductImage
+:ProductImage rdf:type owl:Class ;
+              rdfs:subClassOf owl:Thing .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Reviews
+:Reviews rdf:type owl:Class ;
+         rdfs:subClassOf owl:Thing .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Supplies
+:Supplies rdf:type owl:Class ;
+          rdfs:subClassOf owl:Thing .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#SuppliesStock
+:SuppliesStock rdf:type owl:Class ;
+               rdfs:subClassOf owl:Thing .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#TransportCompany
+:TransportCompany rdf:type owl:Class ;
+                  rdfs:subClassOf owl:Thing .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#TransportVehicle
+:TransportVehicle rdf:type owl:Class ;
+                  rdfs:subClassOf owl:Thing .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#Warehouse
+:Warehouse rdf:type owl:Class ;
+           rdfs:subClassOf owl:Thing .
+
+
+###  http://www.semanticweb.org/ardavan.akhalij/ontologies/2021/11/untitled-ontology-7#supplier
+:supplier rdf:type owl:Class ;
+          rdfs:subClassOf owl:Thing .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointProperties ;
+  owl:members ( :Address_address
+                :Supplier_streetAddress
+                :Warehouse_streetAddress
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointProperties ;
+  owl:members ( :Address_city
+                :Supplier_city
+                :Warehouse_city
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointProperties ;
+  owl:members ( :Address_country
+                :Supplier_country
+                :Warehouse_country
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointProperties ;
+  owl:members ( :Admin_email
+                :Customer_email
+                :Supplier_email
+                :Warehouse_email
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointProperties ;
+  owl:members ( :Customer_ph
+                :Supplier_ph
+                :Warehouse_ph
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
